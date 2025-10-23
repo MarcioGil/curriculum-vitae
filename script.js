@@ -28,7 +28,7 @@ const observer = new IntersectionObserver((entries) => {
 }, observerOptions);
 
 // Observar todos os cards de projeto e categorias de habilidades
-document.querySelectorAll('.project-card, .skill-category, .contact-item').forEach(el => {
+document.querySelectorAll('.project-card, .skill-category, .contact-item, .highlight-item').forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(20px)';
     el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
@@ -50,14 +50,122 @@ document.querySelectorAll('.project-link').forEach(link => {
     link.style.transition = 'transform 0.3s ease';
 });
 
-// Efeito de parallax suave no hero
+// Sistema de Filtros de Projetos
+document.addEventListener('DOMContentLoaded', function() {
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const projectCards = document.querySelectorAll('.project-card');
+
+    // Função para filtrar projetos
+    function filterProjects(filterValue) {
+        projectCards.forEach(card => {
+            const categories = card.getAttribute('data-category');
+            
+            if (filterValue === 'all' || (categories && categories.includes(filterValue))) {
+                card.style.display = 'block';
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                
+                // Animação de entrada
+                setTimeout(() => {
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, 100);
+            } else {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(-20px)';
+                
+                setTimeout(() => {
+                    card.style.display = 'none';
+                }, 300);
+            }
+        });
+    }
+
+    // Event listeners para botões de filtro
+    filterButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            // Remove active class de todos os botões
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            
+            // Adiciona active class ao botão clicado
+            this.classList.add('active');
+            
+            // Aplica o filtro
+            const filterValue = this.getAttribute('data-filter');
+            filterProjects(filterValue);
+        });
+    });
+
+    // Aplicar transições aos cards
+    projectCards.forEach(card => {
+        card.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+    });
+});
+
+// Animação de contagem para estatísticas
+function animateCounter(element, target, duration = 2000) {
+    let start = 0;
+    const increment = target / (duration / 16);
+    
+    function updateCounter() {
+        start += increment;
+        if (start < target) {
+            element.textContent = Math.floor(start) + (target > 10 ? '+' : '');
+            requestAnimationFrame(updateCounter);
+        } else {
+            element.textContent = target + (target > 10 ? '+' : '');
+        }
+    }
+    
+    updateCounter();
+}
+
+// Inicializar animações de contador quando visível
+const statObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const statNumbers = entry.target.querySelectorAll('.stat-number');
+            statNumbers.forEach(stat => {
+                if (!stat.dataset.animated) {
+                    const targetValue = parseInt(stat.textContent);
+                    stat.textContent = '0';
+                    animateCounter(stat, targetValue);
+                    stat.dataset.animated = 'true';
+                }
+            });
+        }
+    });
+}, { threshold: 0.5 });
+
+// Observar seções de estatísticas
+document.querySelectorAll('.hero-stats, .project-stats').forEach(section => {
+    statObserver.observe(section);
+});
+
+// Efeito de paralaxe suave no hero
 window.addEventListener('scroll', () => {
     const scrolled = window.pageYOffset;
-    const hero = document.querySelector('.hero-content');
-    if (hero && scrolled < window.innerHeight) {
-        hero.style.transform = `translateY(${scrolled * 0.3}px)`;
-        hero.style.opacity = 1 - (scrolled / window.innerHeight) * 0.5;
+    const heroImage = document.querySelector('.hero-image');
+    const heroStats = document.querySelector('.hero-stats');
+    
+    if (heroImage) {
+        heroImage.style.transform = `translateY(${scrolled * 0.1}px)`;
     }
+    
+    if (heroStats) {
+        heroStats.style.transform = `translateY(${scrolled * 0.05}px)`;
+    }
+});
+
+// Adicionar efeito de hover aos ícones de tecnologia
+document.querySelectorAll('.tech-icon').forEach(icon => {
+    icon.addEventListener('mouseenter', function() {
+        this.style.transform = 'scale(1.2) rotate(10deg)';
+    });
+    
+    icon.addEventListener('mouseleave', function() {
+        this.style.transform = 'scale(1) rotate(0deg)';
+    });
 });
 
 // Destacar link ativo na navegação
@@ -85,5 +193,8 @@ window.addEventListener('scroll', () => {
     });
 });
 
-console.log('Portfólio de Márcio Gil carregado com sucesso! 🚀');
+console.log('🚀 Portfolio de Márcio Gil carregado com sucesso!');
+console.log('💼 Desenvolvedor Full Stack & AI Engineer');
+console.log('♿ Comprometido com acessibilidade digital');
+console.log('🧠 Especialista em soluções com IA');
 

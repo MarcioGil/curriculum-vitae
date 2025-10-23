@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo - Márcio Gil</title>
+    <style>
+        @media print {
+            body { margin: 0; font-size: 12pt; }
+            .page-break { page-break-before: always; }
+            .no-print { display: none; }
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.4;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 3px solid #4338ca;
+            padding-bottom: 20px;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            color: #4338ca;
+            margin-bottom: 5px;
+        }
+        
+        .header h2 {
+            font-size: 1.3em;
+            color: #6b7280;
+            font-weight: 400;
+            margin-bottom: 15px;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            font-size: 0.9em;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .section {
+            margin-bottom: 25px;
+        }
+        
+        .section h3 {
+            color: #4338ca;
+            font-size: 1.3em;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 5px;
+        }
+        
+        .summary {
+            text-align: justify;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .skill-category h4 {
+            color: #4338ca;
+            margin-bottom: 8px;
+            font-size: 1.1em;
+        }
+        
+        .skill-list {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+        
+        .skill-list li {
+            background: #f3f4f6;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.85em;
+            border: 1px solid #e5e7eb;
+        }
+        
+        .projects-grid {
+            display: grid;
+            gap: 15px;
+        }
+        
+        .project {
+            border: 1px solid #e5e7eb;
+            padding: 15px;
+            border-radius: 6px;
+            background: #fafafa;
+        }
+        
+        .project h4 {
+            color: #4338ca;
+            margin-bottom: 8px;
+            font-size: 1.1em;
+        }
+        
+        .project-meta {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 8px;
+            font-size: 0.85em;
+            color: #6b7280;
+        }
+        
+        .project-description {
+            margin-bottom: 8px;
+            line-height: 1.5;
+        }
+        
+        .project-tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px;
+        }
+        
+        .tech-tag {
+            background: #ddd6fe;
+            color: #4338ca;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 0.8em;
+            font-weight: 500;
+        }
+        
+        .stats-section {
+            background: #f8fafc;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 15px;
+        }
+        
+        .stat-item {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #4338ca;
+        }
+        
+        .stat-label {
+            font-size: 0.9em;
+            color: #6b7280;
+        }
+        
+        .print-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #4338ca;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        
+        .print-button:hover {
+            background: #3730a3;
+        }
+        
+        @media print {
+            .print-button { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <button class="print-button no-print" onclick="window.print()">🖨️ Imprimir/Salvar PDF</button>
+    
+    <div class="header">
+        <h1>Márcio Gil</h1>
+        <h2>Desenvolvedor Full Stack & AI Engineer</h2>
+        <div class="contact-info">
+            <div class="contact-item">
+                <span>📧</span>
+                <span>marciogil.dev@gmail.com</span>
+            </div>
+            <div class="contact-item">
+                <span>🔗</span>
+                <span>linkedin.com/in/marciogil</span>
+            </div>
+            <div class="contact-item">
+                <span>💻</span>
+                <span>github.com/MarcioGil</span>
+            </div>
+            <div class="contact-item">
+                <span>🌐</span>
+                <span>Portfolio Online</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="stats-section">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <div class="stat-number">13+</div>
+                <div class="stat-label">Projetos</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">7</div>
+                <div class="stat-label">Integrações IA</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">5+</div>
+                <div class="stat-label">Anos Experiência</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Acessível</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3>🎯 Resumo Profissional</h3>
+        <div class="summary">
+            Desenvolvedor Full Stack especializado em Inteligência Artificial com mais de 5 anos de experiência. 
+            Expertise em React, Next.js, Node.js, Python e integração de APIs de IA (OpenAI, Google AI). 
+            Comprometido com acessibilidade digital e desenvolvimento inclusivo. Experiência comprovada em 13+ projetos, 
+            incluindo 7 soluções com IA, desde chatbots inteligentes até plataformas de saúde com diagnóstico automatizado. 
+            Especialista em arquiteturas RAG, PWAs e aplicações real-time.
+        </div>
+    </div>
+
+    <div class="section">
+        <h3>🛠️ Competências Técnicas</h3>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h4>Frontend</h4>
+                <ul class="skill-list">
+                    <li>React.js</li>
+                    <li>Next.js 14</li>
+                    <li>TypeScript</li>
+                    <li>JavaScript ES6+</li>
+                    <li>HTML5/CSS3</li>
+                    <li>Tailwind CSS</li>
+                    <li>PWA</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h4>Backend</h4>
+                <ul class="skill-list">
+                    <li>Node.js</li>
+                    <li>Express.js</li>
+                    <li>Python</li>
+                    <li>Flask/FastAPI</li>
+                    <li>tRPC</li>
+                    <li>API REST</li>
+                    <li>GraphQL</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h4>Banco de Dados</h4>
+                <ul class="skill-list">
+                    <li>PostgreSQL</li>
+                    <li>MongoDB</li>
+                    <li>Prisma ORM</li>
+                    <li>SQLite</li>
+                    <li>Redis</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h4>IA & Machine Learning</h4>
+                <ul class="skill-list">
+                    <li>OpenAI API</li>
+                    <li>Google Vision AI</li>
+                    <li>RAG Architecture</li>
+                    <li>Prompt Engineering</li>
+                    <li>LangChain</li>
+                    <li>Vector Databases</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h4>DevOps & Cloud</h4>
+                <ul class="skill-list">
+                    <li>Docker</li>
+                    <li>Vercel</li>
+                    <li>AWS</li>
+                    <li>Git/GitHub</li>
+                    <li>CI/CD</li>
+                    <li>Linux</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h4>Especialidades</h4>
+                <ul class="skill-list">
+                    <li>Acessibilidade (WCAG 2.1)</li>
+                    <li>Game Development</li>
+                    <li>PWA</li>
+                    <li>Real-time Apps</li>
+                    <li>Microservices</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3>🚀 Projetos Principais</h3>
+        <div class="projects-grid">
+            
+            <div class="project">
+                <h4>🏛️ Decifra Cidadão</h4>
+                <div class="project-meta">
+                    <span>📅 2024</span>
+                    <span>🔗 Demo Disponível</span>
+                    <span>⭐ Projeto Destaque</span>
+                </div>
+                <div class="project-description">
+                    Plataforma web inovadora que democratiza o acesso à informação política utilizando IA. 
+                    Transforma linguagem jurídica complexa em explicações claras e acessíveis para todos os cidadãos.
+                </div>
+                <div class="project-tech">
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">Next.js</span>
+                    <span class="tech-tag">OpenAI GPT-4</span>
+                    <span class="tech-tag">TypeScript</span>
+                    <span class="tech-tag">Acessibilidade</span>
+                </div>
+            </div>
+
+            <div class="project">
+                <h4>🤖 Mentor 24/7</h4>
+                <div class="project-meta">
+                    <span>📅 2024</span>
+                    <span>🔗 Demo Disponível</span>
+                    <span>⭐ Projeto Destaque</span>
+                </div>
+                <div class="project-description">
+                    Chatbot inteligente para mentoria em programação com adaptação de dificuldade em tempo real. 
+                    Sistema avançado que personaliza respostas baseado no nível de conhecimento do usuário.
+                </div>
+                <div class="project-tech">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Flask</span>
+                    <span class="tech-tag">OpenAI API</span>
+                    <span class="tech-tag">IA Adaptativa</span>
+                    <span class="tech-tag">Real-time</span>
+                </div>
+            </div>
+
+            <div class="project">
+                <h4>🧠 Knowledge Guardian</h4>
+                <div class="project-meta">
+                    <span>📅 2024</span>
+                    <span>🔗 Demo Disponível</span>
+                    <span>🎮 Game + IA</span>
+                </div>
+                <div class="project-description">
+                    Jogo educativo inovador que combina RPG com sistema RAG (Retrieval Augmented Generation). 
+                    Gera questões dinâmicas baseadas em documentos, criando experiência de aprendizado única.
+                </div>
+                <div class="project-tech">
+                    <span class="tech-tag">Phaser.js</span>
+                    <span class="tech-tag">RAG Architecture</span>
+                    <span class="tech-tag">Vector DB</span>
+                    <span class="tech-tag">Game Development</span>
+                    <span class="tech-tag">Education Tech</span>
+                </div>
+            </div>
+
+            <div class="project">
+                <h4>🏥 Health AI Platform</h4>
+                <div class="project-meta">
+                    <span>📅 2024</span>
+                    <span>🔒 Confidencial</span>
+                    <span>🏥 HealthTech</span>
+                </div>
+                <div class="project-description">
+                    Plataforma completa de saúde com IA para diagnóstico de imagens médicas e monitoramento de pacientes. 
+                    Integra Google Vision AI para análise automatizada e dashboard médico avançado.
+                </div>
+                <div class="project-tech">
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">Node.js</span>
+                    <span class="tech-tag">Google Vision AI</span>
+                    <span class="tech-tag">PostgreSQL</span>
+                    <span class="tech-tag">Medical AI</span>
+                </div>
+            </div>
+
+            <div class="project">
+                <h4>♿ Mentor de Carreira Acessível</h4>
+                <div class="project-meta">
+                    <span>📅 2024</span>
+                    <span>♿ Acessibilidade</span>
+                    <span>🌟 Inclusão</span>
+                </div>
+                <div class="project-description">
+                    PWA focado em inclusão digital para mentoria profissional de pessoas com deficiência. 
+                    Implementa padrões WCAG 2.1 AA e tecnologias assistivas avançadas.
+                </div>
+                <div class="project-tech">
+                    <span class="tech-tag">PWA</span>
+                    <span class="tech-tag">WCAG 2.1</span>
+                    <span class="tech-tag">Tecnologia Assistiva</span>
+                    <span class="tech-tag">Mobile-First</span>
+                    <span class="tech-tag">Inclusão</span>
+                </div>
+            </div>
+
+            <div class="project">
+                <h4>🧠 Neurobridge IA</h4>
+                <div class="project-meta">
+                    <span>📅 2024</span>
+                    <span>🔬 Pesquisa</span>
+                    <span>🧠 NeurotTech</span>
+                </div>
+                <div class="project-description">
+                    Sistema avançado de comunicação neural com interfaces cérebro-computador. 
+                    Utiliza IA para traduzir sinais neurais em comandos digitais acessíveis.
+                </div>
+                <div class="project-tech">
+                    <span class="tech-tag">Neural Networks</span>
+                    <span class="tech-tag">Brain-Computer Interface</span>
+                    <span class="tech-tag">Signal Processing</span>
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">TensorFlow</span>
+                </div>
+            </div>
+
+            <div class="project">
+                <h4>💰 SmartCash</h4>
+                <div class="project-meta">
+                    <span>📅 2024</span>
+                    <span>💼 FinTech</span>
+                    <span>📱 Mobile App</span>
+                </div>
+                <div class="project-description">
+                    Aplicativo de gestão financeira inteligente com IA para análise de gastos e recomendações personalizadas. 
+                    Dashboard completo com insights automáticos sobre padrões financeiros.
+                </div>
+                <div class="project-tech">
+                    <span class="tech-tag">React Native</span>
+                    <span class="tech-tag">Node.js</span>
+                    <span class="tech-tag">IA Financeira</span>
+                    <span class="tech-tag">MongoDB</span>
+                    <span class="tech-tag">Analytics</span>
+                </div>
+            </div>
+
+            <div class="project">
+                <h4>🚗 EstacionamentoApp</h4>
+                <div class="project-meta">
+                    <span>📅 2023</span>
+                    <span>📱 Mobile</span>
+                    <span>🅿️ Smart City</span>
+                </div>
+                <div class="project-description">
+                    Aplicativo móvel para localização de vagas de estacionamento em tempo real. 
+                    Sistema de reservas integrado com mapeamento dinâmico e notificações push.
+                </div>
+                <div class="project-tech">
+                    <span class="tech-tag">React Native</span>
+                    <span class="tech-tag">Maps API</span>
+                    <span class="tech-tag">Real-time</span>
+                    <span class="tech-tag">Push Notifications</span>
+                    <span class="tech-tag">Geolocation</span>
+                </div>
+            </div>
+
+            <div class="project">
+                <h4>⚙️ Workflow Automation</h4>
+                <div class="project-meta">
+                    <span>📅 2023</span>
+                    <span>🤖 Automação</span>
+                    <span>🔧 Produtividade</span>
+                </div>
+                <div class="project-description">
+                    Sistema de automação de fluxos de trabalho com interface drag-and-drop. 
+                    Integra múltiplas APIs e serviços para automatizar tarefas repetitivas empresariais.
+                </div>
+                <div class="project-tech">
+                    <span class="tech-tag">Node.js</span>
+                    <span class="tech-tag">Express</span>
+                    <span class="tech-tag">API Integration</span>
+                    <span class="tech-tag">Workflow Engine</span>
+                    <span class="tech-tag">Microservices</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="page-break"></div>
+
+    <div class="section">
+        <h3>🎓 Formação & Certificações</h3>
+        <div class="project">
+            <h4>Tecnólogo em Análise e Desenvolvimento de Sistemas</h4>
+            <div class="project-meta">
+                <span>🎓 Graduação</span>
+                <span>📅 Em andamento</span>
+            </div>
+        </div>
+        
+        <div class="project">
+            <h4>Certificações Técnicas</h4>
+            <div class="project-description">
+                • Especialização em React e Next.js<br>
+                • Certificação em Acessibilidade Web (WCAG 2.1)<br>
+                • AWS Cloud Practitioner<br>
+                • OpenAI API Integration Specialist
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3>🏆 Conquistas & Diferenciais</h3>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h4>📊 Métricas de Impacto</h4>
+                <ul class="skill-list">
+                    <li>13+ projetos concluídos</li>
+                    <li>7 integrações de IA</li>
+                    <li>100% acessível (WCAG)</li>
+                    <li>5+ anos experiência</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h4>🌟 Especialidades Únicas</h4>
+                <ul class="skill-list">
+                    <li>Acessibilidade Digital</li>
+                    <li>IA Aplicada</li>
+                    <li>RAG Architecture</li>
+                    <li>Game Development</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h4>🎯 Foco em Resultados</h4>
+                <ul class="skill-list">
+                    <li>Soluções Inclusivas</li>
+                    <li>Performance Otimizada</li>
+                    <li>UX Centrada no Usuário</li>
+                    <li>Código Limpo</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h4>📈 Tendências Futuras</h4>
+                <ul class="skill-list">
+                    <li>AI-First Development</li>
+                    <li>Voice Interfaces</li>
+                    <li>Edge Computing</li>
+                    <li>Web3 Integration</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h3>💬 Idiomas</h3>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h4>Português</h4>
+                <p>Nativo</p>
+            </div>
+            <div class="skill-category">
+                <h4>Inglês</h4>
+                <p>Avançado (Técnico)</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Adicionar data de geração
+        document.addEventListener('DOMContentLoaded', function() {
+            const footer = document.createElement('div');
+            footer.style.textAlign = 'center';
+            footer.style.marginTop = '30px';
+            footer.style.fontSize = '0.8em';
+            footer.style.color = '#6b7280';
+            footer.innerHTML = `Currículo atualizado em ${new Date().toLocaleDateString('pt-BR')} | Versão Digital Completa`;
+            document.body.appendChild(footer);
+        });
+    </script>
+</body>
+</html>

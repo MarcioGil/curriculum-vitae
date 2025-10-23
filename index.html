@@ -27,8 +27,22 @@
         <div class="hero-content container">
             <div class="hero-text">
                 <h1 class="fade-in">Olá, eu sou <span class="highlight">Márcio Gil</span></h1>
-                <p class="subtitle fade-in-delay">Desenvolvedor Full-Stack em Formação | Estudante de Engenharia de Software</p>
-                <p class="description fade-in-delay-2">Transformando ideias em soluções robustas e escaláveis com React, C#, Python e paixão por arquitetura de software.</p>
+                <p class="subtitle fade-in-delay">Desenvolvedor Full Stack & AI Engineer | Especialista em Acessibilidade Digital</p>
+                <p class="description fade-in-delay-2">Criando soluções inovadoras com <strong>React, Node.js, Python</strong> e <strong>Inteligência Artificial</strong>. Transformo ideias complexas em aplicações acessíveis, escaláveis e centradas no usuário.</p>
+                <div class="hero-stats fade-in-delay-3">
+                    <div class="stat">
+                        <span class="stat-number">13+</span>
+                        <span class="stat-label">Projetos</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">7</span>
+                        <span class="stat-label">Com IA</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">5</span>
+                        <span class="stat-label">Demos Live</span>
+                    </div>
+                </div>
                 <div class="cta-buttons fade-in-delay-3">
                     <a href="#projetos" class="btn btn-primary">Ver Projetos</a>
                     <a href="#contato" class="btn btn-secondary">Entrar em Contato</a>
@@ -36,6 +50,12 @@
             </div>
             <div class="hero-image fade-in-delay-2">
                 <img src="profile-photo.jpg" alt="Foto de Márcio Gil" class="profile-photo">
+                <div class="hero-tech-stack">
+                    <span class="tech-icon">⚛️</span>
+                    <span class="tech-icon">🐍</span>
+                    <span class="tech-icon">🧠</span>
+                    <span class="tech-icon">♿</span>
+                </div>
             </div>
         </div>
     </header>
@@ -45,9 +65,33 @@
         <div class="container">
             <h2 class="section-title">Sobre Mim</h2>
             <div class="about-content">
-                <p>Sou estudante de <strong>Engenharia de Software (4º Período)</strong> e estou em transição de carreira para o desenvolvimento, combinando uma sólida base em <strong>Front-end (JavaScript, React)</strong> com proficiência em <strong>Back-end (C#/.NET, Python/Flask)</strong>.</p>
-                <p>Minha paixão é traduzir lógica complexa em soluções funcionais e arquitetonicamente sólidas. Como <strong>Embaixador DIO Campus Expert</strong>, demonstro liderança técnica, forte comunicação e compromisso com a acessibilidade e a qualidade do código.</p>
-                <p><strong>Pessoa com Deficiência (PCD):</strong> Deficiência Física. Comprometido com a inclusão e a acessibilidade digital.</p>
+                <div class="about-text">
+                    <p>Sou estudante de <strong>Engenharia de Software (4º Período)</strong> e desenvolvedor Full Stack especializado em <strong>soluções com Inteligência Artificial</strong>. Combino expertise técnica sólida em <strong>React/Next.js, Node.js, Python</strong> com experiência avançada em <strong>integração de IA (OpenAI, Google AI)</strong> e desenvolvimento de aplicações complexas.</p>
+                    
+                    <p>Como <strong>Embaixador DIO Campus Expert</strong>, lidero iniciativas técnicas e educacionais, demonstrando forte comunicação e compromisso com a <strong>acessibilidade digital (WCAG 2.1)</strong>. Minha paixão é criar <strong>soluções inovadoras</strong> que democratizam o acesso à tecnologia e melhoram a experiência do usuário.</p>
+                    
+                    <p><strong>Experiência Comprovada:</strong> 13+ projetos concluídos incluindo plataformas de IA educacional, jogos interativos, sistemas de automação e aplicações de acessibilidade. Experiência com <strong>RAG, tRPC, PWAs, microserviços</strong> e arquiteturas modernas.</p>
+                    
+                    <p><strong>Pessoa com Deficiência (PCD):</strong> Deficiência Física. Comprometido com a inclusão e a acessibilidade digital, trazendo perspectiva única para o desenvolvimento de soluções verdadeiramente inclusivas.</p>
+                </div>
+                
+                <div class="about-highlights">
+                    <div class="highlight-item">
+                        <i class="fas fa-brain"></i>
+                        <h4>Especialista em IA</h4>
+                        <p>7+ projetos com integração de IA, incluindo RAG, chatbots e análise preditiva</p>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-universal-access"></i>
+                        <h4>Acessibilidade Expert</h4>
+                        <p>Foco em WCAG 2.1, PWAs e design inclusivo em todos os projetos</p>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-rocket"></i>
+                        <h4>Inovação Constante</h4>
+                        <p>Sempre explorando novas tecnologias: Next.js 14, tRPC, Phaser.js</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -56,14 +100,156 @@
     <section id="projetos" class="section section-alt">
         <div class="container">
             <h2 class="section-title">Projetos em Destaque</h2>
+            
+            <!-- Filtros de Categoria -->
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="ai">IA & ML</button>
+                <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+                <button class="filter-btn" data-filter="accessibility">Acessibilidade</button>
+                <button class="filter-btn" data-filter="games">Games</button>
+            </div>
+
             <div class="projects-grid">
-                <!-- Projeto 1 -->
-                <div class="project-card">
+                <!-- Projeto Destacado 1: Decifra Cidadão -->
+                <div class="project-card featured" data-category="ai accessibility">
+                    <div class="project-header">
+                        <h3>Decifra Cidadão</h3>
+                        <span class="project-tag featured-tag">IA + Acessibilidade</span>
+                    </div>
+                    <p class="project-description">Plataforma inovadora que democratiza o acesso à informação pública usando <strong>IA (OpenAI GPT-4, Google Vision)</strong> para traduzir documentos burocráticos em linguagem acessível. Com foco em <strong>WCAG 2.1</strong> e PWA.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">React</span>
+                        <span class="tech-badge">Node.js</span>
+                        <span class="tech-badge">OpenAI GPT-4</span>
+                        <span class="tech-badge">Google Vision</span>
+                        <span class="tech-badge">PWA</span>
+                        <span class="tech-badge">WCAG 2.1</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/MarcioGil/decifra-cidadao" target="_blank" class="project-link">Ver no GitHub →</a>
+                        <a href="https://decifrando-ocidadao.manus.space/" target="_blank" class="project-link demo">Demo Live →</a>
+                    </div>
+                </div>
+
+                <!-- Projeto Destacado 2: Mentor 24/7 -->
+                <div class="project-card featured" data-category="ai fullstack">
+                    <div class="project-header">
+                        <h3>Mentor 24/7</h3>
+                        <span class="project-tag featured-tag">IA Educacional</span>
+                    </div>
+                    <p class="project-description">Plataforma de tutoria pessoal baseada em IA que adapta o conteúdo educacional em tempo real. Usa <strong>RAG</strong>, <strong>OpenAI API</strong> e <strong>tRPC</strong> para criar experiências de aprendizado personalizadas.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">Next.js 14</span>
+                        <span class="tech-badge">TypeScript</span>
+                        <span class="tech-badge">tRPC</span>
+                        <span class="tech-badge">PostgreSQL</span>
+                        <span class="tech-badge">OpenAI API</span>
+                        <span class="tech-badge">RAG</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/MarcioGil/Mentor-24-7" target="_blank" class="project-link">Ver no GitHub →</a>
+                        <a href="https://mentor247-hwsnwhcn.manus.space/" target="_blank" class="project-link demo">Demo Live →</a>
+                    </div>
+                </div>
+
+                <!-- Projeto Destacado 3: Knowledge Guardian -->
+                <div class="project-card featured" data-category="games ai fullstack">
+                    <div class="project-header">
+                        <h3>Knowledge Guardian</h3>
+                        <span class="project-tag featured-tag">Game Educativo</span>
+                    </div>
+                    <p class="project-description">Jogo educativo 2D que combina <strong>Phaser.js</strong> com IA adaptativa. Sistema completo de gamificação, física realista e conteúdo educativo personalizado baseado no desempenho do jogador.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">React</span>
+                        <span class="tech-badge">Phaser.js</span>
+                        <span class="tech-badge">Node.js</span>
+                        <span class="tech-badge">SQLite</span>
+                        <span class="tech-badge">OpenAI API</span>
+                        <span class="tech-badge">JWT</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/MarcioGil/knowledge-guardian" target="_blank" class="project-link">Ver no GitHub →</a>
+                        <a href="https://guardiaokn-5swkh3rb.manus.space" target="_blank" class="project-link demo">Demo Live →</a>
+                    </div>
+                </div>
+
+                <!-- Projeto 4: NeuroBridge IA -->
+                <div class="project-card" data-category="ai accessibility fullstack">
+                    <div class="project-header">
+                        <h3>NeuroBridge IA</h3>
+                        <span class="project-tag">IA Inclusiva</span>
+                    </div>
+                    <p class="project-description">Plataforma abrangente de inclusão com <strong>React/TypeScript</strong> frontend, <strong>Node.js/Python</strong> backends e serviços de IA para avaliação de acessibilidade. Interfaces multi-modais para máxima inclusão.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">React</span>
+                        <span class="tech-badge">TypeScript</span>
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">Node.js</span>
+                        <span class="tech-badge">AI Services</span>
+                    </div>
+                    <a href="https://github.com/MarcioGil/neurobridge-IA" target="_blank" class="project-link">Ver no GitHub →</a>
+                </div>
+
+                <!-- Projeto 5: SmartCash -->
+                <div class="project-card" data-category="fullstack ai">
+                    <div class="project-header">
+                        <h3>SmartCash</h3>
+                        <span class="project-tag">FinTech</span>
+                    </div>
+                    <p class="project-description">Simulador inteligente de transações bancárias com análise financeira por IA. Frontend <strong>React</strong>, backend <strong>Node.js</strong>, microserviço <strong>Python/Flask</strong> e chatbot financeiro integrado.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">React</span>
+                        <span class="tech-badge">Node.js</span>
+                        <span class="tech-badge">Python/Flask</span>
+                        <span class="tech-badge">MongoDB</span>
+                        <span class="tech-badge">JWT</span>
+                        <span class="tech-badge">IA Chatbot</span>
+                    </div>
+                    <a href="https://github.com/MarcioGil/SmartCash" target="_blank" class="project-link">Ver no GitHub →</a>
+                </div>
+
+                <!-- Projeto 6: Health AI Platform -->
+                <div class="project-card" data-category="ai fullstack">
+                    <div class="project-header">
+                        <h3>Health AI Platform</h3>
+                        <span class="project-tag">IA Médica</span>
+                    </div>
+                    <p class="project-description">Plataforma de diagnóstico médico com <strong>React</strong> frontend, <strong>Node.js</strong> backend e IA simulada para análise de sintomas. Inclui geolocalização e recursos médicos avançados.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">React</span>
+                        <span class="tech-badge">Node.js</span>
+                        <span class="tech-badge">AI/ML</span>
+                        <span class="tech-badge">Geolocation</span>
+                        <span class="tech-badge">Medical APIs</span>
+                    </div>
+                    <a href="https://github.com/MarcioGil/-health-ai-platform" target="_blank" class="project-link">Ver no GitHub →</a>
+                </div>
+
+                <!-- Projeto 7: Mentor de Carreira Acessível -->
+                <div class="project-card" data-category="accessibility ai fullstack">
+                    <div class="project-header">
+                        <h3>Mentor de Carreira Acessível</h3>
+                        <span class="project-tag">Acessibilidade</span>
+                    </div>
+                    <p class="project-description">Plataforma de mentoria com foco em transição de carreira. <strong>Next.js 14</strong>, implementação <strong>RAG</strong>, comandos de voz, design mobile-first PWA e <strong>PostgreSQL + pgvector</strong>.</p>
+                    <div class="project-tech">
+                        <span class="tech-badge">Next.js 14</span>
+                        <span class="tech-badge">RAG</span>
+                        <span class="tech-badge">PostgreSQL</span>
+                        <span class="tech-badge">Voice Commands</span>
+                        <span class="tech-badge">PWA</span>
+                    </div>
+                    <a href="https://github.com/MarcioGil/mentor-de-carreira-acessivel-com-foco-em-transicao" target="_blank" class="project-link">Ver no GitHub →</a>
+                </div>
+
+                <!-- Projeto 8: Workflow Automation System -->
+                <div class="project-card" data-category="fullstack">
                     <div class="project-header">
                         <h3>Workflow Automation System</h3>
-                        <span class="project-tag">Full-Stack</span>
+                        <span class="project-tag">Automação</span>
                     </div>
-                    <p class="project-description">Sistema de automação de fluxo de trabalho desenvolvido com <strong>React</strong> (Front-end) e <strong>Flask/Python</strong> (Back-end). Demonstra habilidades Full-Stack, integração de linguagens e arquitetura de software.</p>
+                    <p class="project-description">Sistema robusto de automação de fluxo de trabalho com <strong>React</strong> frontend e <strong>Flask/Python</strong> backend. Demonstra arquitetura Full-Stack e integração de linguagens.</p>
                     <div class="project-tech">
                         <span class="tech-badge">React</span>
                         <span class="tech-badge">Flask</span>
@@ -73,33 +259,40 @@
                     <a href="https://github.com/MarcioGil/workflow-automation-system" target="_blank" class="project-link">Ver no GitHub →</a>
                 </div>
 
-                <!-- Projeto 2 -->
-                <div class="project-card">
+                <!-- Projeto 9: EstacionamentoApp -->
+                <div class="project-card" data-category="backend">
                     <div class="project-header">
                         <h3>EstacionamentoApp</h3>
                         <span class="project-tag">Back-end</span>
                     </div>
-                    <p class="project-description">Aplicação de console para gerenciamento de estacionamento. Demonstra aplicação prática e robusta dos princípios de <strong>Programação Orientada a Objetos (POO)</strong> em C# e .NET.</p>
+                    <p class="project-description">Aplicação robusta para gerenciamento de estacionamento demonstrando aplicação prática dos princípios de <strong>Programação Orientada a Objetos (POO)</strong> em C# e .NET.</p>
                     <div class="project-tech">
                         <span class="tech-badge">C#</span>
                         <span class="tech-badge">.NET</span>
                         <span class="tech-badge">POO</span>
+                        <span class="tech-badge">Console App</span>
                     </div>
                     <a href="https://github.com/MarcioGil/EstacionamentoApp" target="_blank" class="project-link">Ver no GitHub →</a>
                 </div>
+            </div>
 
-                <!-- Projeto 3 -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>Artigos Técnicos</h3>
-                        <span class="project-tag">Liderança</span>
-                    </div>
-                    <p class="project-description">Autor de artigos técnicos na DIO, incluindo o artigo sobre <strong>Acessibilidade Web</strong>. Demonstra liderança técnica, comunicação e compromisso com padrões de qualidade.</p>
-                    <div class="project-tech">
-                        <span class="tech-badge">Acessibilidade</span>
-                        <span class="tech-badge">Comunicação</span>
-                    </div>
-                    <a href="https://www.dio.me/articles/acessibilidade-web-como-criar-sites-inclusivos-usando-html-css-e-javascript-465659faf652" target="_blank" class="project-link">Ler Artigo →</a>
+            <!-- Seção de Estatísticas -->
+            <div class="project-stats">
+                <div class="stat-item">
+                    <span class="stat-number">13+</span>
+                    <span class="stat-label">Projetos Concluídos</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">7</span>
+                    <span class="stat-label">Projetos com IA</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">5</span>
+                    <span class="stat-label">Demos Live</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Foco em Acessibilidade</span>
                 </div>
             </div>
         </div>
@@ -111,34 +304,86 @@
             <h2 class="section-title">Habilidades Técnicas</h2>
             <div class="skills-grid">
                 <div class="skill-category">
-                    <h3>Front-end</h3>
+                    <h3><i class="fas fa-code"></i> Frontend</h3>
                     <ul>
-                        <li>JavaScript</li>
-                        <li>React</li>
+                        <li>React.js & Next.js 14</li>
+                        <li>TypeScript & JavaScript</li>
                         <li>HTML5 & CSS3</li>
-                        <li>APIs REST</li>
-                        <li>Design Responsivo</li>
-                        <li>Acessibilidade Web</li>
+                        <li>Tailwind CSS & Styled Components</li>
+                        <li>PWA Development</li>
+                        <li>Responsive Design</li>
+                        <li>Acessibilidade Web (WCAG 2.1)</li>
                     </ul>
                 </div>
                 <div class="skill-category">
-                    <h3>Back-end & Core</h3>
+                    <h3><i class="fas fa-server"></i> Backend & APIs</h3>
                     <ul>
+                        <li>Node.js & Express.js</li>
+                        <li>Python & Flask/FastAPI</li>
                         <li>C# & .NET</li>
-                        <li>Python & Flask</li>
-                        <li>POO</li>
-                        <li>SQL</li>
-                        <li>Estruturas de Dados</li>
+                        <li>tRPC & REST APIs</li>
+                        <li>JWT Authentication</li>
+                        <li>Microservices Architecture</li>
+                        <li>API Gateway & Rate Limiting</li>
                     </ul>
                 </div>
                 <div class="skill-category">
-                    <h3>Cloud & Ferramentas</h3>
+                    <h3><i class="fas fa-database"></i> Banco de Dados</h3>
                     <ul>
-                        <li>Git & GitHub</li>
-                        <li>AWS (Conceitos)</li>
-                        <li>Azure (Conceitos)</li>
-                        <li>VSCode</li>
+                        <li>PostgreSQL & pgvector</li>
+                        <li>MongoDB</li>
+                        <li>SQLite</li>
+                        <li>Drizzle ORM & Sequelize</li>
+                        <li>Database Design</li>
+                        <li>SQL Avançado</li>
                     </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-brain"></i> Inteligência Artificial</h3>
+                    <ul>
+                        <li>OpenAI API (GPT-4, DALL-E)</li>
+                        <li>Google AI & Vision API</li>
+                        <li>RAG (Retrieval Augmented Generation)</li>
+                        <li>Prompt Engineering</li>
+                        <li>Machine Learning Concepts</li>
+                        <li>AI Integration & Workflows</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-gamepad"></i> Game Development</h3>
+                    <ul>
+                        <li>Phaser.js 3</li>
+                        <li>WebGL & Canvas</li>
+                        <li>Game Physics</li>
+                        <li>2D Animation</li>
+                        <li>Game Architecture</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> DevOps & Ferramentas</h3>
+                    <ul>
+                        <li>Git & GitHub Actions</li>
+                        <li>Docker & Containerization</li>
+                        <li>Vercel & Railway Deploy</li>
+                        <li>AWS & Azure (Conceitos)</li>
+                        <li>CI/CD Pipelines</li>
+                        <li>Performance Monitoring</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Competências Adicionais -->
+            <div class="additional-skills">
+                <h3>Competências Adicionais</h3>
+                <div class="soft-skills">
+                    <span class="soft-skill">Liderança Técnica</span>
+                    <span class="soft-skill">Arquitetura de Software</span>
+                    <span class="soft-skill">Acessibilidade Digital</span>
+                    <span class="soft-skill">Comunicação Técnica</span>
+                    <span class="soft-skill">Mentoria & Ensino</span>
+                    <span class="soft-skill">Resolução de Problemas</span>
+                    <span class="soft-skill">Trabalho em Equipe</span>
+                    <span class="soft-skill">Adaptabilidade</span>
                 </div>
             </div>
         </div>
@@ -178,6 +423,10 @@
                     <a href="curriculum_vitae.pdf" download class="doc-link">
                         <span class="doc-icon">📄</span>
                         <span>Currículo (PDF)</span>
+                    </a>
+                    <a href="curriculum_print.html" target="_blank" class="doc-link">
+                        <span class="doc-icon">🌐</span>
+                        <span>Currículo Atualizado (HTML)</span>
                     </a>
                     <a href="laudo_PCD.pdf" download class="doc-link">
                         <span class="doc-icon">📋</span>

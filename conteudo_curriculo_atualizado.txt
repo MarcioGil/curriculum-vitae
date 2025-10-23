@@ -1,0 +1,148 @@
+# 📋 CONTEÚDO PARA ATUALIZAR SEU CURRÍCULO PDF
+
+## 🚀 NOVOS PROJETOS PARA INCLUIR
+
+### PROJETOS PRINCIPAIS (Destaque)
+
+**1. 🏛️ Decifra Cidadão** (2024) - ⭐ PROJETO DESTAQUE
+• Descrição: Plataforma web que democratiza informação política usando IA
+• Tecnologias: React, Next.js, OpenAI GPT-4, TypeScript
+• Impacto: Transforma linguagem jurídica em explicações acessíveis
+• Status: Demo disponível online
+
+**2. 🤖 Mentor 24/7** (2024) - ⭐ PROJETO DESTAQUE  
+• Descrição: Chatbot inteligente para mentoria em programação
+• Tecnologias: Python, Flask, OpenAI API, IA Adaptativa
+• Impacto: Adaptação de dificuldade em tempo real
+• Status: Demo disponível online
+
+**3. 🧠 Knowledge Guardian** (2024) - 🎮 GAME + IA
+• Descrição: Jogo educativo RPG com sistema RAG
+• Tecnologias: Phaser.js, RAG Architecture, Vector DB
+• Impacto: Gera questões dinâmicas baseadas em documentos
+• Status: Demo disponível online
+
+### PROJETOS SECUNDÁRIOS (Importantes)
+
+**4. 🏥 Health AI Platform** (2024)
+• Descrição: Plataforma de saúde com IA para diagnóstico
+• Tecnologias: React, Node.js, Google Vision AI, PostgreSQL
+• Foco: Análise de imagens médicas automatizada
+
+**5. ♿ Mentor de Carreira Acessível** (2024)
+• Descrição: PWA para mentoria inclusiva de PCD
+• Tecnologias: PWA, WCAG 2.1, Tecnologia Assistiva
+• Foco: 100% acessível e inclusivo
+
+**6. 🧠 Neurobridge IA** (2024)
+• Descrição: Interface cérebro-computador com IA
+• Tecnologias: Neural Networks, Python, TensorFlow
+• Foco: Comunicação neural avançada
+
+**7. 💰 SmartCash** (2024)
+• Descrição: App de gestão financeira com IA
+• Tecnologias: React Native, Node.js, IA Financeira, MongoDB
+• Foco: Análise inteligente de gastos
+
+**8. 🚗 EstacionamentoApp** (2023)
+• Descrição: App para localização de vagas em tempo real
+• Tecnologias: React Native, Maps API, Geolocation
+• Foco: Smart City e mobilidade urbana
+
+**9. ⚙️ Workflow Automation** (2023)
+• Descrição: Sistema de automação empresarial
+• Tecnologias: Node.js, Express, API Integration
+• Foco: Automatização de fluxos de trabalho
+
+---
+
+## 📊 ESTATÍSTICAS ATUALIZADAS
+
+• **13+ Projetos** concluídos
+• **7 Integrações de IA** implementadas  
+• **100% Acessível** (WCAG 2.1)
+• **5+ Anos** de experiência
+• **3 Projetos** com demo online
+
+---
+
+## 🛠️ TECNOLOGIAS ADICIONAIS
+
+### IA & Machine Learning
+• OpenAI API (GPT-4, ChatGPT)
+• Google Vision AI
+• RAG Architecture (Retrieval Augmented Generation)
+• Prompt Engineering
+• LangChain
+• Vector Databases
+• Neural Networks
+• TensorFlow
+
+### Especialidades Avançadas
+• Brain-Computer Interface
+• Medical AI
+• Financial AI
+• Educational Technology
+• Game Development (Phaser.js)
+• Real-time Adaptation Systems
+
+### Ferramentas de Acessibilidade
+• WCAG 2.1 AA Compliance
+• Screen Reader Optimization
+• Keyboard Navigation
+• High Contrast Modes
+• Voice Recognition
+• Assistive Technology Integration
+
+---
+
+## 🏆 CONQUISTAS E DIFERENCIAIS
+
+### Métricas de Impacto
+• **7 soluções com IA** desenvolvidas do zero
+• **3 projetos** com foco em acessibilidade
+• **2 aplicações** na área da saúde
+• **1 interface** cérebro-computador
+• **100% dos projetos** seguem padrões de acessibilidade
+
+### Especialidades Únicas
+• Desenvolvimento AI-First
+• Arquiteturas RAG complexas
+• Interfaces neurais adaptativas
+• Gamificação educacional
+• Inclusão digital avançada
+
+### Setores de Atuação
+• **HealthTech**: Diagnóstico médico com IA
+• **EdTech**: Jogos educativos inteligentes
+• **GovTech**: Democratização de informação pública
+• **FinTech**: Análise financeira automatizada
+• **Accessibility Tech**: Soluções inclusivas
+
+---
+
+## 📝 RESUMO PROFISSIONAL ATUALIZADO
+
+"Desenvolvedor Full Stack especializado em Inteligência Artificial com mais de 5 anos de experiência. Expertise comprovada em React, Next.js, Node.js, Python e integração avançada de APIs de IA (OpenAI, Google AI). Pioneiro em desenvolvimento inclusivo e acessibilidade digital (WCAG 2.1).
+
+Portfólio robusto com 13+ projetos concluídos, incluindo 7 soluções inovadoras com IA: desde chatbots adaptativos até plataformas médicas com diagnóstico automatizado. Especialista em arquiteturas RAG, PWAs, aplicações real-time e interfaces cérebro-computador.
+
+Comprometido com impacto social através da tecnologia, desenvolvendo soluções que democratizam acesso à informação, educação e saúde. Experiência única combinando desenvolvimento técnico avançado com foco em inclusão digital e responsabilidade social."
+
+---
+
+## 🎯 COMO USAR ESTE CONTEÚDO
+
+1. **Para o PDF atual**: Copie e cole as seções relevantes
+2. **Para novo PDF**: Use o arquivo `curriculum_print.html` gerado
+3. **Para versões online**: Mantenha links para demos funcionais
+
+### Links de Demo (incluir se possível):
+• Decifra Cidadão: [Link disponível]
+• Mentor 24/7: [Link disponível] 
+• Knowledge Guardian: [Link disponível]
+
+---
+
+**Data de atualização**: Outubro 2024
+**Versão**: 2.0 - Com portfólio completo de IA
