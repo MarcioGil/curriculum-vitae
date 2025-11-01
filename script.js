@@ -59,26 +59,37 @@ document.addEventListener('DOMContentLoaded', function() {
     function filterProjects(filterValue) {
         projectCards.forEach(card => {
             const categories = card.getAttribute('data-category');
-            
             if (filterValue === 'all' || (categories && categories.includes(filterValue))) {
                 card.style.display = 'block';
                 card.style.opacity = '0';
-                card.style.transform = 'translateY(20px)';
-                
-                // Animação de entrada
+                card.style.transform = 'scale(0.96) translateY(20px)';
+                card.classList.add('modern-card-highlight');
                 setTimeout(() => {
                     card.style.opacity = '1';
-                    card.style.transform = 'translateY(0)';
-                }, 100);
+                    card.style.transform = 'scale(1) translateY(0)';
+                }, 120);
+                setTimeout(() => {
+                    card.classList.remove('modern-card-highlight');
+                }, 600);
             } else {
                 card.style.opacity = '0';
-                card.style.transform = 'translateY(-20px)';
-                
+                card.style.transform = 'scale(0.96) translateY(-20px)';
                 setTimeout(() => {
                     card.style.display = 'none';
                 }, 300);
             }
         });
+// Efeito de hover nos tags modernos
+document.querySelectorAll('.project-tag').forEach(tag => {
+    tag.addEventListener('mouseenter', function() {
+        this.style.boxShadow = '0 2px 8px #4338ca33';
+        this.style.transform = 'scale(1.08)';
+    });
+    tag.addEventListener('mouseleave', function() {
+        this.style.boxShadow = '';
+        this.style.transform = 'scale(1)';
+    });
+});
     }
 
     // Event listeners para botões de filtro

@@ -1,0 +1,38 @@
+# Novos Projetos para Currículo PDF
+
+---
+
+## 🟣 Mãe Conectada, Sempre Empoderada
+**Categoria:** Acessibilidade, Social Impact, IA, PWA  
+**Descrição:** Plataforma PWA de empoderamento digital para mães brasileiras, com assistente de voz Clara (PT-BR), sistema de emergência GPS, comunidade segura e recursos educacionais.  
+**Destaques:**
+- Assistente de voz otimizada (Web Speech API)
+- Sistema de emergência com envio de localização
+- Chat comunitário moderado
+- Centro de documentos inteligente
+- Módulos educacionais e financeiros
+- 100% acessível (WCAG 2.1 AA), mobile-first
+**Tecnologias:** Next.js 14, React, TypeScript, Tailwind CSS, PWA, Web Speech API
+**Demo:** marciogil.github.io/Mae-Conecta
+
+---
+
+## 🟢 Jornada Ativa
+**Categoria:** Full Stack, IA, Saúde, Acessibilidade  
+**Descrição:** Plataforma fullstack com IA para pacientes ortopédicos do SUS, transformando a espera por cirurgia em uma jornada ativa e informada.  
+**Destaques:**
+- Plano de exercícios personalizado com IA Gemini
+- Chatbot de apoio psicológico (TCC para dor crônica)
+- Diário de dor e humor com análise de padrões
+- Scanner de acessibilidade (IA Computer Vision)
+- Canal direto de advocacia legal (organizador de caso digital, integração com Defensoria Pública)
+- Comunidade segura para pacientes
+**Tecnologias:** React 19, TypeScript, Tailwind CSS 4, Node.js, Express, tRPC, MySQL/TiDB, Drizzle ORM, Google Gemini API, MediaPipe/TensorFlow.js
+**Repositório:** github.com/MarcioGil/jornada-ativa
+
+---
+
+# Como usar
+- Copie e cole cada projeto na seção de projetos do seu currículo PDF
+- Adapte o layout conforme necessário
+- Mantenha os links para demo/repositório se possível

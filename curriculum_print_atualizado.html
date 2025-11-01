@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo - Márcio Gil (Atualizado)</title>
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; color: #222; background: #fff; max-width: 900px; margin: 0 auto; padding: 32px; }
+        h1, h2, h3 { color: #4338ca; }
+        h1 { font-size: 2.2em; margin-bottom: 0.2em; }
+        h2 { font-size: 1.3em; margin-top: 2em; margin-bottom: 0.7em; border-bottom: 2px solid #eee; padding-bottom: 0.2em; }
+        h3 { font-size: 1.1em; margin-top: 1.2em; margin-bottom: 0.3em; }
+        .contact { margin-bottom: 1.5em; font-size: 1em; }
+        .contact span { margin-right: 1.5em; }
+        .stats { display: flex; gap: 2em; margin-bottom: 1.5em; }
+        .stat { text-align: center; }
+        .stat-number { font-size: 1.5em; font-weight: bold; color: #4338ca; }
+        .stat-label { font-size: 0.9em; color: #555; }
+        .section { margin-bottom: 2em; }
+        .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-bottom: 1.5em; }
+        .skill-category h4 { color: #4338ca; margin-bottom: 0.3em; font-size: 1em; }
+        .skill-list { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 6px; }
+        .skill-list li { background: #f3f4f6; border-radius: 4px; padding: 2px 8px; font-size: 0.9em; border: 1px solid #e5e7eb; }
+        .projects-grid { display: grid; gap: 18px; }
+        .project { border: 1px solid #e5e7eb; border-radius: 6px; background: #fafafa; padding: 14px 18px; }
+        .project h4 { color: #4338ca; margin-bottom: 0.2em; font-size: 1.1em; }
+        .project-meta { font-size: 0.9em; color: #6b7280; margin-bottom: 0.5em; }
+        .project-description { margin-bottom: 0.5em; line-height: 1.5; }
+        .project-tech { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 0.3em; }
+        .tech-tag { background: #ddd6fe; color: #4338ca; padding: 2px 7px; border-radius: 3px; font-size: 0.85em; font-weight: 500; }
+        .project-links { margin-top: 0.3em; }
+        .project-links a { color: #4338ca; text-decoration: underline; margin-right: 1em; font-size: 0.95em; }
+        @media print { .print-btn { display: none; } }
+        .print-btn { position: fixed; top: 20px; right: 20px; background: #4338ca; color: #fff; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; font-size: 14px; }
+        .print-btn:hover { background: #3730a3; }
+    </style>
+</head>
+<body>
+    <button class="print-btn" onclick="window.print()">🖨️ Imprimir/Salvar PDF</button>
+    <h1>Márcio Gil</h1>
+    <div class="contact">
+        <span>📧 marciogil.dev@gmail.com</span>
+        <span>🔗 linkedin.com/in/marciogil</span>
+        <span>💻 github.com/MarcioGil</span>
+        <span>🌐 Mesquita - RJ</span>
+    </div>
+    <div class="stats">
+        <div class="stat">
+            <div class="stat-number">15+</div>
+            <div class="stat-label">Projetos</div>
+        </div>
+        <div class="stat">
+            <div class="stat-number">9</div>
+            <div class="stat-label">Com IA</div>
+        </div>
+        <div class="stat">
+            <div class="stat-number">6</div>
+            <div class="stat-label">Demos Live</div>
+        </div>
+        <div class="stat">
+            <div class="stat-number">100%</div>
+            <div class="stat-label">Acessível</div>
+        </div>
+    </div>
+    <h2>Resumo Profissional</h2>
+    <div class="section">
+        Desenvolvedor Full Stack & AI Engineer com foco em acessibilidade digital. Experiência comprovada em React, Next.js, Node.js, Python, integração de IA (OpenAI, Google AI, Gemini), PWAs e soluções inclusivas. 15+ projetos entregues, 9 com IA, incluindo plataformas de saúde, educação, automação e impacto social.
+    </div>
+    <h2>Competências Técnicas</h2>
+    <div class="skills-grid">
+        <div class="skill-category">
+            <h4>Frontend</h4>
+            <ul class="skill-list">
+                <li>React.js</li><li>Next.js 14</li><li>TypeScript</li><li>JavaScript ES6+</li><li>HTML5/CSS3</li><li>Tailwind CSS</li><li>PWA</li>
+            </ul>
+        </div>
+        <div class="skill-category">
+            <h4>Backend</h4>
+            <ul class="skill-list">
+                <li>Node.js</li><li>Express.js</li><li>Python</li><li>Flask/FastAPI</li><li>tRPC</li><li>API REST</li><li>GraphQL</li>
+            </ul>
+        </div>
+        <div class="skill-category">
+            <h4>Banco de Dados</h4>
+            <ul class="skill-list">
+                <li>PostgreSQL</li><li>MongoDB</li><li>MySQL/TiDB</li><li>Prisma ORM</li><li>SQLite</li><li>Redis</li>
+            </ul>
+        </div>
+        <div class="skill-category">
+            <h4>IA & Machine Learning</h4>
+            <ul class="skill-list">
+                <li>OpenAI API</li><li>Google Vision AI</li><li>Google Gemini API</li><li>RAG Architecture</li><li>Prompt Engineering</li><li>LangChain</li><li>Vector Databases</li><li>MediaPipe</li><li>TensorFlow.js</li>
+            </ul>
+        </div>
+        <div class="skill-category">
+            <h4>DevOps & Cloud</h4>
+            <ul class="skill-list">
+                <li>Docker</li><li>Vercel</li><li>AWS</li><li>Git/GitHub</li><li>CI/CD</li><li>Linux</li>
+            </ul>
+        </div>
+        <div class="skill-category">
+            <h4>Especialidades</h4>
+            <ul class="skill-list">
+                <li>Acessibilidade (WCAG 2.1)</li><li>Game Development</li><li>PWA</li><li>Real-time Apps</li><li>Microservices</li>
+            </ul>
+        </div>
+    </div>
+    <h2>Projetos Principais</h2>
+    <div class="projects-grid">
+        <!-- Novos Projetos -->
+        <div class="project">
+            <h4>🟣 Mãe Conectada, Sempre Empoderada</h4>
+            <div class="project-meta">2025 · Acessibilidade, Social Impact, IA, PWA</div>
+            <div class="project-description">Plataforma PWA de empoderamento digital para mães brasileiras, com assistente de voz Clara (PT-BR), sistema de emergência GPS, comunidade segura e recursos educacionais. 100% acessível (WCAG 2.1 AA), mobile-first.</div>
+            <div class="project-tech">
+                <span class="tech-tag">Next.js 14</span><span class="tech-tag">React</span><span class="tech-tag">TypeScript</span><span class="tech-tag">Tailwind CSS</span><span class="tech-tag">PWA</span><span class="tech-tag">Web Speech API</span>
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/MarcioGil/Mae-Conectada-sempre-empoderada" target="_blank">GitHub</a>
+                <a href="https://marciogil.github.io/Mae-Conecta/" target="_blank">Demo</a>
+            </div>
+        </div>
+        <div class="project">
+            <h4>🟢 Jornada Ativa</h4>
+            <div class="project-meta">2025 · Full Stack, IA, Saúde, Acessibilidade</div>
+            <div class="project-description">Plataforma fullstack com IA para pacientes ortopédicos do SUS, transformando a espera por cirurgia em uma jornada ativa e informada. Plano de exercícios com IA Gemini, chatbot psicológico, scanner de acessibilidade e canal legal integrado.</div>
+            <div class="project-tech">
+                <span class="tech-tag">React 19</span><span class="tech-tag">TypeScript</span><span class="tech-tag">Tailwind CSS 4</span><span class="tech-tag">Node.js</span><span class="tech-tag">Express</span><span class="tech-tag">tRPC</span><span class="tech-tag">MySQL/TiDB</span><span class="tech-tag">Drizzle ORM</span><span class="tech-tag">Google Gemini API</span><span class="tech-tag">MediaPipe</span><span class="tech-tag">TensorFlow.js</span>
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/MarcioGil/jornada-ativa" target="_blank">GitHub</a>
+            </div>
+        </div>
+        <!-- Projetos anteriores (exemplo) -->
+        <div class="project">
+            <h4>🏛️ Decifra Cidadão</h4>
+            <div class="project-meta">2024 · IA + Acessibilidade</div>
+            <div class="project-description">Plataforma web inovadora que democratiza o acesso à informação política utilizando IA. Transforma linguagem jurídica complexa em explicações claras e acessíveis para todos os cidadãos.</div>
+            <div class="project-tech">
+                <span class="tech-tag">React</span><span class="tech-tag">Next.js</span><span class="tech-tag">OpenAI GPT-4</span><span class="tech-tag">TypeScript</span><span class="tech-tag">Acessibilidade</span>
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/MarcioGil/decifra-cidadao" target="_blank">GitHub</a>
+                <a href="https://decifrando-ocidadao.manus.space/" target="_blank">Demo</a>
+            </div>
+        </div>
+        <div class="project">
+            <h4>🤖 Mentor 24/7</h4>
+            <div class="project-meta">2024 · IA Educacional</div>
+            <div class="project-description">Chatbot inteligente para mentoria em programação com adaptação de dificuldade em tempo real. Sistema avançado que personaliza respostas baseado no nível de conhecimento do usuário.</div>
+            <div class="project-tech">
+                <span class="tech-tag">Python</span><span class="tech-tag">Flask</span><span class="tech-tag">OpenAI API</span><span class="tech-tag">IA Adaptativa</span><span class="tech-tag">Real-time</span>
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/MarcioGil/Mentor-24-7" target="_blank">GitHub</a>
+                <a href="https://mentor247-hwsnwhcn.manus.space/" target="_blank">Demo</a>
+            </div>
+        </div>
+        <div class="project">
+            <h4>🧠 Knowledge Guardian</h4>
+            <div class="project-meta">2024 · Game + IA</div>
+            <div class="project-description">Jogo educativo inovador que combina RPG com sistema RAG (Retrieval Augmented Generation). Gera questões dinâmicas baseadas em documentos, criando experiência de aprendizado única.</div>
+            <div class="project-tech">
+                <span class="tech-tag">Phaser.js</span><span class="tech-tag">RAG Architecture</span><span class="tech-tag">Vector DB</span><span class="tech-tag">Game Development</span><span class="tech-tag">Education Tech</span>
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/MarcioGil/knowledge-guardian" target="_blank">GitHub</a>
+                <a href="https://guardiaokn-5swkh3rb.manus.space" target="_blank">Demo</a>
+            </div>
+        </div>
+        <!-- ...outros projetos anteriores... -->
+    </div>
+    <h2>Formação & Certificações</h2>
+    <div class="section">
+        <strong>Tecnólogo em Análise e Desenvolvimento de Sistemas</strong> (Em andamento)<br>
+        <strong>Certificações:</strong> React/Next.js, Acessibilidade Web (WCAG 2.1), AWS Cloud Practitioner, OpenAI API Integration Specialist
+    </div>
+    <h2>Idiomas</h2>
+    <div class="section">
+        <strong>Português:</strong> Nativo<br>
+        <strong>Inglês:</strong> Avançado (Técnico)
+    </div>
+    <div style="text-align:center; margin-top:32px; color:#888; font-size:0.9em;">Currículo atualizado em 31/10/2025 | Versão Digital Completa</div>
+</body>
+</html>
