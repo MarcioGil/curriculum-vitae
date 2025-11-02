@@ -107,9 +107,12 @@ document.querySelectorAll('.project-tag').forEach(tag => {
         });
     });
 
-    // Aplicar transições aos cards
+    // Aplicar transições aos cards e garantir que todos estejam visíveis inicialmente
     projectCards.forEach(card => {
         card.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+        card.style.display = 'block'; // Garantir que todos os cards sejam exibidos inicialmente
+        card.style.opacity = '1';
+        card.style.transform = 'scale(1) translateY(0)';
     });
 });
 
