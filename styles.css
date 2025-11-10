@@ -6,6 +6,32 @@
     transition: transform 0.2s, box-shadow 0.2s;
     position: relative;
 }
+/* Destaque especial para o card AnalytiCore */
+.analyticore-highlight {
+    border: 3px solid #7c3aed;
+    box-shadow: 0 8px 32px -8px #7c3aed44, 0 2px 12px #4338ca22;
+    background: linear-gradient(120deg, #f8fafc 80%, #ede9fe 100%);
+    position: relative;
+    z-index: 2;
+}
+.analyticore-banner {
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 12px 12px 0 0;
+    overflow: hidden;
+    box-shadow: 0 2px 12px #4338ca22;
+}
+@media (max-width: 700px) {
+    .analyticore-banner img {
+        height: 120px;
+        object-fit: cover;
+    }
+}
+@media (max-width: 500px) {
+    .analyticore-banner img {
+        height: 80px;
+    }
+}
 .modern-card:hover {
     transform: translateY(-4px) scale(1.02);
     box-shadow: 0 12px 32px -8px #4338ca33;
