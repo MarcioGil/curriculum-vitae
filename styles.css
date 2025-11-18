@@ -1,3 +1,47 @@
+/* =============================
+     ACESSIBILIDADE
+============================= */
+.skip-link {
+    position: absolute;
+    left: -999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    z-index: 1000;
+    background: var(--accent);
+    color: var(--primary-dark);
+    font-weight: bold;
+    padding: 0.7em 1.5em;
+    border-radius: var(--radius-md);
+    transition: left 0.3s;
+}
+.skip-link:focus {
+    left: 16px;
+    top: 16px;
+    width: auto;
+    height: auto;
+    outline: 2px solid var(--primary-dark);
+    box-shadow: var(--shadow-md);
+}
+
+button:focus, .filter-btn:focus, a:focus, input:focus, .modern-card:focus {
+    outline: 3px solid var(--accent);
+    outline-offset: 2px;
+    box-shadow: 0 0 0 4px #facc1533;
+}
+
+@media (prefers-contrast: more) {
+    body {
+        background: #fff !important;
+        color: #000 !important;
+    }
+    .modern-card, .about-video-card {
+        background: #fff !important;
+        color: #000 !important;
+        border-color: #000 !important;
+    }
+}
 /* ===================================
    VARIÁVEIS CSS MODERNAS
    =================================== */
@@ -55,9 +99,108 @@ body {
     line-height: 1.7;
     overflow-x: hidden;
 }
+/* =============================
+     VARIÁVEIS E PALETA MODERNA
+============================= */
+:root {
+    --primary: #2563eb;
+    --primary-dark: #1e40af;
+    --primary-light: #60a5fa;
+    --secondary: #7c3aed;
+    --accent: #facc15;
+    --success: #10b981;
+    --warning: #f59e0b;
 
-/* Modernização dos cards de projeto */
+    --bg-primary: #f8fafc;
+    --bg-secondary: #eef2ff;
+    --bg-tertiary: #e0e7ef;
+
+    --text-primary: #22223b;
+    --text-secondary: #4b5563;
+    --text-tertiary: #a1a1aa;
+
+    --border-color: #e0e7ef;
+    --shadow-sm: 0 1px 3px rgba(60, 60, 120, 0.08);
+    --shadow-md: 0 4px 16px rgba(60, 60, 120, 0.10);
+    --shadow-lg: 0 10px 32px rgba(60, 60, 120, 0.13);
+    --shadow-xl: 0 20px 60px rgba(60, 60, 120, 0.16);
+
+    --radius-sm: 10px;
+    --radius-md: 16px;
+    --radius-lg: 24px;
+    --radius-xl: 32px;
+
+    --transition-fast: 0.18s cubic-bezier(.4,0,.2,1);
+    --transition-normal: 0.35s cubic-bezier(.4,0,.2,1);
+    --transition-slow: 0.7s cubic-bezier(.4,0,.2,1);
+}
+
+/* =============================
+     RESET E BASE
+============================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+body {
+    font-family: 'Montserrat', 'Inter', 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: var(--text-primary);
+    background: linear-gradient(120deg, #2563eb 0%, #7c3aed 100%);
+    line-height: 1.7;
+    overflow-x: hidden;
+}
+
+/* =============================
+     CARD DE VÍDEO SOBRE MIM
+============================= */
+.about-video-card {
+    background: var(--bg-primary);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    padding: 1.5em;
+    margin-bottom: 2em;
+    text-align: center;
+}
+.about-video {
+    width: 100%;
+    max-width: 480px;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-md);
+    margin-bottom: 1em;
+}
+.video-title {
+    font-size: 1.3em;
+    font-weight: 700;
+    color: var(--primary-dark);
+    margin-bottom: 0.7em;
+}
+.video-desc {
+    color: var(--text-secondary);
+    font-size: 1em;
+}
+
+/* =============================
+     GRID DE PROJETOS
+============================= */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+/* =============================
+     CARDS DE PROJETO
+============================= */
 .modern-card {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.8s var(--transition-normal) forwards;
     box-shadow: var(--shadow-lg);
     border: 2px solid var(--border-color);
     background: rgba(248, 250, 252, 0.85);
@@ -67,30 +210,15 @@ body {
     border-radius: var(--radius-lg);
     overflow: hidden;
 }
-/* Destaque especial para o card AnalytiCore */
-.analyticore-highlight {
-    border: 3px solid #7c3aed;
-    box-shadow: 0 8px 32px -8px #7c3aed44, 0 2px 12px #4338ca22;
-    background: linear-gradient(120deg, #f8fafc 80%, #ede9fe 100%);
-    position: relative;
-    z-index: 2;
+.modern-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: var(--shadow-xl);
+    border-color: var(--accent);
 }
-.analyticore-banner {
-    width: 100%;
-    margin-bottom: 1rem;
-    border-radius: 12px 12px 0 0;
-    overflow: hidden;
-    box-shadow: 0 2px 12px #4338ca22;
-}
-@media (max-width: 700px) {
-    .analyticore-banner img {
-        height: 120px;
-        object-fit: cover;
-    }
-}
-@media (max-width: 500px) {
-    .analyticore-banner img {
-        height: 80px;
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 .modern-card::before {
@@ -104,15 +232,8 @@ body {
     opacity: 0;
     transition: opacity var(--transition-normal);
 }
-
 .modern-card:hover::before {
     opacity: 1;
-}
-
-.modern-card:hover {
-    transform: translateY(-10px) scale(1.03);
-    box-shadow: var(--shadow-xl);
-    border-color: var(--accent);
 }
 .project-header h3 {
     display: flex;
@@ -122,24 +243,53 @@ body {
     font-family: 'Montserrat', 'Poppins', sans-serif;
     font-weight: 700;
     letter-spacing: 0.5px;
-.modern-card {
-    opacity: 0;
-    transform: translateY(30px);
-    animation: fadeInUp 0.8s var(--transition-normal) forwards;
+}
+.project-description strong, .project-tag, .tech-badge {
+    color: var(--primary-dark);
+    background: var(--accent);
+    border-radius: var(--radius-sm);
+    padding: 0.1em 0.5em;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+}
+.project-icon {
+    font-size: 1.3em;
+    margin-right: 0.2em;
+}
+.project-tag {
+    display: inline-block;
+    margin-right: 0.3em;
+    margin-bottom: 0.2em;
+    padding: 2px 10px;
+    border-radius: 12px;
+    font-size: 0.85em;
+    font-weight: 600;
+    background: #e0e7ff;
+    color: #4338ca;
+    letter-spacing: 0.02em;
+}
+/* Tags de categoria */
+.tag-access { background: #d1fae5; color: #065f46; }
+.tag-ia { background: #f3e8ff; color: #7c3aed; }
+.tag-pwa { background: #fee2e2; color: #b91c1c; }
+.tag-saude { background: #e0f2fe; color: #0369a1; }
+.tag-backend { background: #dbeafe; color: #1e40af; }
+.tag-api { background: #dcfce7; color: #15803d; }
+.tag-fullstack { background: #fef3c7; color: #92400e; }
+.project-tech .tech-badge {
+    background: #ede9fe;
+    color: #6d28d9;
+    border-radius: 6px;
+    padding: 2px 8px;
+    font-size: 0.85em;
+    margin-right: 0.2em;
+    margin-bottom: 0.2em;
+    font-weight: 500;
 }
 
-@keyframes fadeInUp {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-    gap: 2rem;
-    margin-top: 2rem;
-}
+/* =============================
+     BOTÕES DE FILTRO
+============================= */
 .filter-btn {
     font-family: 'Montserrat', 'Poppins', sans-serif;
     font-weight: 600;
@@ -158,68 +308,33 @@ body {
     color: var(--text-primary);
     transform: scale(1.07);
 }
-.project-description strong, .project-tag, .tech-badge {
-    color: var(--primary-dark);
-    background: var(--accent);
-    border-radius: var(--radius-sm);
-    padding: 0.1em 0.5em;
-    font-weight: 600;
-    letter-spacing: 0.2px;
+
+/* =============================
+     RESPONSIVIDADE
+============================= */
+@media (max-width: 700px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+    }
+    .modern-card {
+        font-size: 0.98em;
+    }
+    .about-video-card {
+        padding: 1em;
+    }
 }
-}
-.project-icon {
-    font-size: 1.3em;
-    margin-right: 0.2em;
-}
-.project-tag {
-    display: inline-block;
-    margin-right: 0.3em;
-    margin-bottom: 0.2em;
-    padding: 2px 10px;
-    border-radius: 12px;
-    font-size: 0.85em;
-    font-weight: 600;
-    background: #e0e7ff;
-    color: #4338ca;
-    letter-spacing: 0.02em;
-}
-.tag-access {
-    background: #d1fae5;
-    color: #065f46;
-}
-.tag-ia {
-    background: #f3e8ff;
-    color: #7c3aed;
-}
-.tag-pwa {
-    background: #fee2e2;
-    color: #b91c1c;
-}
-.tag-saude {
-    background: #e0f2fe;
-    color: #0369a1;
-}
-.tag-backend {
-    background: #dbeafe;
-    color: #1e40af;
-}
-.tag-api {
-    background: #dcfce7;
-    color: #15803d;
-}
-.tag-fullstack {
-    background: #fef3c7;
-    color: #92400e;
-}
-.project-tech .tech-badge {
-    background: #ede9fe;
-    color: #6d28d9;
-    border-radius: 6px;
-    padding: 2px 8px;
-    font-size: 0.85em;
-    margin-right: 0.2em;
-    margin-bottom: 0.2em;
-    font-weight: 500;
+@media (max-width: 500px) {
+    .modern-card {
+        font-size: 0.93em;
+        padding: 0.7em;
+    }
+    .project-header h3 {
+        font-size: 1em;
+    }
+    .about-video-card {
+        padding: 0.5em;
+    }
 }
 /* Reset e Base */
 * {
