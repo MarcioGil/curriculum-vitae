@@ -1,584 +1,154 @@
 <!DOCTYPE html>
-<html lang="pt-BR" aria-label="Portfólio de Márcio Gil">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfólio profissional de Márcio Gil - Desenvolvedor Full-Stack em Formação">
+    <meta name="description" content="Portfólio de Márcio Gil, Desenvolvedor Full-Stack especializado em IA e Acessibilidade.">
     <title>Márcio Gil | Desenvolvedor Full-Stack</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script> <!-- Adicione seu kit do Font Awesome -->
 </head>
 <body>
-    <a href="#main-content" class="skip-link" tabindex="1">Pular para conteúdo principal</a>
-    <!-- Header/Hero Section -->
-    <header class="hero" id="inicio" role="banner" aria-label="Cabeçalho do portfólio">
-        <nav class="navbar" role="navigation" aria-label="Navegação principal">
+
+    <a href="#main-content" class="skip-link">Pular para conteúdo principal</a>
+
+    <header class="hero" id="inicio">
+        <nav class="navbar">
             <div class="container">
-                <a href="#inicio" class="logo" style="display: flex; align-items: center; text-decoration: none; color: inherit;">
-                    <svg width="40" height="40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Avatar MG">
-                        <circle cx="50" cy="50" r="48" fill="#e0e7ef" stroke="#b6c2d1" stroke-width="4"/>
-                        <text x="50%" y="54%" text-anchor="middle" fill="#22223b" font-size="32" font-family="Arial, sans-serif" font-weight="bold" dy=".3em">MG</text>
-                        <g>
-                            <rect x="30" y="70" width="40" height="10" rx="3" fill="#4a4e69"/>
-                            <rect x="45" y="73" width="10" height="4" rx="2" fill="#f2e9e4"/>
-                        </g>
-                    </svg>
-                </a>
+                <a href="#inicio" class="logo">MG</a>
                 <ul class="nav-links">
-                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#inicio" class="active">Início</a></li>
                     <li><a href="#sobre">Sobre</a></li>
                     <li><a href="#projetos">Projetos</a></li>
                     <li><a href="#habilidades">Habilidades</a></li>
                     <li><a href="#contato">Contato</a></li>
-                    <li><a href="#documentacao">Documentação</a></li>
                 </ul>
             </div>
         </nav>
-        <div class="hero-content container">
+
+        <div id="main-content" class="hero-content container">
             <div class="hero-text">
-                <h1 class="fade-in">Olá, eu sou <span class="highlight">Márcio Gil</span></h1>
-                <p class="subtitle fade-in-delay">Desenvolvedor Front-End/Back-End Júnior em Formação | Especialista em Acessibilidade Digital</p>
-                <p class="description fade-in-delay-2">Estudante de Engenharia de Software (Estácio) buscando primeira oportunidade como desenvolvedor júnior. Criando soluções inovadoras com <strong>React, Node.js, Python</strong> e <strong>Inteligência Artificial</strong>. Transformo ideias complexas em aplicações acessíveis, escaláveis e centradas no usuário.</p>
-                <div class="hero-stats fade-in-delay-3">
+                <h1>Olá, eu sou <span class="highlight">Márcio Gil</span></h1>
+                <p class="subtitle">Desenvolvedor Full-Stack | IA & Acessibilidade</p>
+                <p class="description">Estudante de Engenharia de Software transformando ideias em aplicações acessíveis, escaláveis e centradas no usuário com React, Node.js, Python e IA.</p>
+                <div class="hero-stats">
                     <div class="stat">
                         <span class="stat-number">15+</span>
-                        <section class="sobre-novo">
-                            <div class="about-avatar">
-                                <!-- Avatar SVG -->
-                                <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="60" cy="60" r="60" fill="#f8f8ff" />
-                                    <ellipse cx="60" cy="60" rx="38" ry="44" fill="#ffe5b4" />
-                                    <ellipse cx="60" cy="80" rx="28" ry="18" fill="#e0c3fc" />
-                                    <!-- Face -->
-                                    <ellipse cx="60" cy="60" rx="30" ry="36" fill="#ffe5b4" />
-                                    <!-- Glasses -->
-                                    <ellipse cx="48" cy="65" rx="8" ry="6" fill="#fff" stroke="#22223b" stroke-width="2" />
-                                    <ellipse cx="72" cy="65" rx="8" ry="6" fill="#fff" stroke="#22223b" stroke-width="2" />
-                                    <rect x="56" y="65" width="8" height="2" fill="#22223b" />
-                                    <!-- Smile -->
-                                    <path d="M52 78 Q60 84 68 78" stroke="#22223b" stroke-width="2" fill="none" />
-                                    <!-- Notebook -->
-                                    <rect x="40" y="90" width="40" height="12" rx="3" fill="#fff" stroke="#22223b" stroke-width="2" />
-                                    <rect x="44" y="94" width="32" height="4" rx="2" fill="#e0c3fc" />
-                                </svg>
-                            </div>
-                            <div class="sobre-texto">
-                                <div class="sobre-destaque">Sobre Mim</div>
-                                <p>
-                                    Profissional de tecnologia apaixonado por resolver problemas reais com soluções digitais. Tenho experiência em desenvolvimento web, suporte técnico, automação de processos e ensino de tecnologia. Busco sempre aprender e compartilhar conhecimento, valorizando trabalho em equipe, empatia e comunicação clara.
-                                </p>
-                                <p>
-                                    Minhas principais competências incluem: desenvolvimento front-end e back-end, integração de sistemas, atendimento ao cliente, treinamento de usuários e adaptação rápida a novas tecnologias. Sou motivado por desafios e pela busca constante de inovação.
-                                </p>
-                                <p>
-                                    Acredito que tecnologia é uma ferramenta poderosa para transformar vidas e negócios. Meu objetivo é contribuir para projetos que gerem impacto positivo, promovendo inclusão digital e crescimento profissional.
-                                </p>
-                                <div class="soft-skills-cards">
-                                    <div class="soft-skill-card">Comunicação</div>
-                                    <div class="soft-skill-card">Empatia</div>
-                                    <div class="soft-skill-card">Trabalho em Equipe</div>
-                                    <div class="soft-skill-card">Resiliência</div>
-                                    <div class="soft-skill-card">Aprendizado Contínuo</div>
-                                    <div class="soft-skill-card">Proatividade</div>
-                                    <div class="soft-skill-card">Organização</div>
-                                    <div class="soft-skill-card">Foco em Resultados</div>
-                                </div>
-                            </div>
-                        </section>
-                                <span class="project-tag featured-tag tag-fullstack">Full Stack</span>
-                                <span class="project-tag featured-tag tag-access">Acessibilidade</span>
-                            </div>
-                            <p class="project-description">Plataforma educacional inclusiva que utiliza Inteligência Artificial para personalizar o aprendizado, promover acessibilidade e engajamento de alunos PCD. Recursos de leitura automática, adaptação de conteúdo e gamificação.</p>
-                            <div class="project-tech">
-                                <span class="tech-badge">React</span>
-                                <span class="tech-badge">Node.js</span>
-                                <span class="tech-badge">MongoDB</span>
-                                <span class="tech-badge">Express</span>
-                                <span class="tech-badge">Socket.io</span>
-                                <span class="tech-badge">JWT</span>
-                                <span class="tech-badge">Styled Components</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://github.com/MarcioGil/Amigo-do-Saber" target="_blank" class="project-link">GitHub</a>
-                                <a href="https://tiadora-gjmqdkfw.manus.space" target="_blank" class="project-link demo">Demo</a>
-                            </div>
-                        </div>
-                        <div class="project-card featured modern-card" data-category="fullstack ai backend devops">
-                            <div class="project-header">
-                                <h3><span class="project-icon">🎫</span> HelpDeskFlow</h3>
-                                <span class="project-tag featured-tag tag-fullstack">Full Stack</span>
-                                <span class="project-tag featured-tag tag-ia">IA</span>
-                                <span class="project-tag featured-tag tag-backend">Backend</span>
-                            </div>
-                            <p class="project-description">Sistema empresarial completo de <strong>gerenciamento de chamados com IA</strong> integrada para triagem automática, chatbot contextual e priorização inteligente. Inclui <strong>RBAC (3 níveis)</strong>, integrações com <strong>Slack/Teams/WhatsApp</strong>, analytics em tempo real, <strong>NPS</strong> e acessibilidade <strong>WCAG 2.1 AA</strong>. Deploy em produção com CI/CD automatizado.</p>
-                            <div class="project-tech">
-                                <span class="tech-badge">TypeScript</span>
-                                <span class="tech-badge">React 18</span>
-                                <span class="tech-badge">Node.js + Express</span>
-                                <span class="tech-badge">PostgreSQL + Prisma</span>
-                                <span class="tech-badge">JWT + RBAC</span>
-                                <span class="tech-badge">Jest + Playwright</span>
-                                <span class="tech-badge">GitHub Actions</span>
-                                <span class="tech-badge">Vercel + Render</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://github.com/MarcioGil/Sistema-de-Chamados-Internos" target="_blank" class="project-link">GitHub</a>
-                                <a href="https://help-desk-flow-frontend.vercel.app" target="_blank" class="project-link demo">Demo Live</a>
-                            </div>
-                        </div>
-
-                        <div class="project-card featured modern-card" data-category="backend ai devops">
-                            <div class="project-header">
-                                <h3><span class="project-icon">🔒</span> SAST-CI/CD Pipeline</h3>
-                                <span class="project-tag featured-tag tag-backend">Backend</span>
-                                <span class="project-tag featured-tag tag-ia">IA</span>
-                                <span class="project-tag featured-tag tag-devops">DevOps</span>
-                            </div>
-                            <p class="project-description">Pipeline automatizado de <strong>segurança de aplicações (AppSec)</strong> usando SAST (Semgrep) em CI/CD para prevenir vulnerabilidades antes da produção. Detecta falhas como <strong>SQL Injection</strong> e <strong>segredos hardcoded</strong> em microserviços Node.js, promovendo maturidade e economia em cibersegurança.</p>
-                            <div class="project-tech">
-                                <span class="tech-badge">Node.js (Express)</span>
-                                <span class="tech-badge">Docker & Compose</span>
-                                <span class="tech-badge">SQLite</span>
-                                <span class="tech-badge">Semgrep</span>
-                                <span class="tech-badge">GitHub Actions</span>
-                            </div>
-                            <div class="project-links">
-                                <a href="https://github.com/MarcioGil/Sast-CI-CD-Pipeline" target="_blank" class="project-link">GitHub</a>
-                                <a href="https://youtu.be/V3i74OnXMDU" target="_blank" class="project-link demo">Demo Vídeo</a>
-                            </div>
-                        </div>
-                            <!-- Projeto Destacado: AnalytiCore -->
-                            <div class="project-card featured modern-card" data-category="ai fullstack backend dashboard">
-                                    <div class="project-header">
-                                        <h3><span class="project-icon">📊</span> AnalytiCore</h3>
-                                        <span class="project-tag featured-tag tag-ai">IA</span>
-                                        <span class="project-tag featured-tag tag-fullstack">Full Stack</span>
-                                        <span class="project-tag featured-tag tag-dashboard">Dashboard</span>
-                                    </div>
-                                    <p class="project-description"><strong>Plataforma unificada de Business Intelligence</strong> com KPIs dinâmicos, IA generativa para previsões e resumos, dashboard responsivo e API REST segura. Frontend em React/Vite, backend em FastAPI/Python, automação CI/CD e deploy cloud. Ideal para decisões ágeis e gestão inteligente.</p>
-                                    <div class="project-tech">
-                                        <span class="tech-badge">React</span>
-                                        <span class="tech-badge">Vite</span>
-                                        <span class="tech-badge">FastAPI (Python)</span>
-                                        <span class="tech-badge">SQLModel</span>
-                                        <span class="tech-badge">JWT</span>
-                                        <span class="tech-badge">NLP</span>
-                                        <span class="tech-badge">GitHub Actions</span>
-                                        <span class="tech-badge">Manus Space</span>
-                                    </div>
-                                    <div class="project-links">
-                                        <a href="https://github.com/MarcioGil/AnalytiCore" target="_blank" class="project-link">GitHub</a>
-                                        <a href="https://analycore-vbeemm3y.manus.space/" target="_blank" class="project-link demo">Demo</a>
-                                    </div>
-                                </div>
-                    <div class="project-card featured modern-card" data-category="accessibility ai fullstack">
-                        <div class="project-header">
-                            <h3><span class="project-icon">🤱</span> Mãe Conectada, Sempre Empoderada</h3>
-                            <span class="project-tag featured-tag tag-access">Acessibilidade</span>
-                            <span class="project-tag featured-tag tag-ia">IA</span>
-                            <span class="project-tag featured-tag tag-pwa">PWA</span>
-                        </div>
-                        <p class="project-description">Plataforma PWA de empoderamento digital para mães brasileiras, com assistente de voz Clara (PT-BR), sistema de emergência GPS, comunidade segura e recursos educacionais. <strong>100% acessível</strong> (WCAG 2.1 AA), mobile-first.</p>
-                        <div class="project-tech">
-                            <span class="tech-badge">Next.js 14</span>
-                            <span class="tech-badge">React</span>
-                            <span class="tech-badge">TypeScript</span>
-                            <span class="tech-badge">Tailwind CSS</span>
-                            <span class="tech-badge">PWA</span>
-                            <span class="tech-badge">Web Speech API</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/MarcioGil/Mae-Conectada-sempre-empoderada" target="_blank" class="project-link">GitHub</a>
-                            <a href="https://marciogil.github.io/Mae-Conecta/" target="_blank" class="project-link demo">Demo</a>
-                        </div>
+                        <span class="stat-label">Projetos</span>
                     </div>
-
-                    <!-- Projeto Novo: Jornada Ativa -->
-                    <div class="project-card featured modern-card" data-category="ai fullstack accessibility">
-                        <div class="project-header">
-                            <h3><span class="project-icon">🦵</span> Jornada Ativa</h3>
-                            <span class="project-tag featured-tag tag-saude">Saúde</span>
-                            <span class="project-tag featured-tag tag-ia">IA</span>
-                            <span class="project-tag featured-tag tag-access">Acessibilidade</span>
-                        </div>
-                        <p class="project-description">Plataforma fullstack com IA para pacientes ortopédicos do SUS, transformando a espera por cirurgia em uma jornada ativa e informada. <strong>Plano de exercícios com IA Gemini</strong>, chatbot psicológico, scanner de acessibilidade e canal legal integrado.</p>
-                        <div class="project-tech">
-                            <span class="tech-badge">React 19</span>
-                            <span class="tech-badge">TypeScript</span>
-                            <span class="tech-badge">Tailwind CSS 4</span>
-                            <span class="tech-badge">Node.js</span>
-                            <span class="tech-badge">Express</span>
-                            <span class="tech-badge">tRPC</span>
-                            <span class="tech-badge">MySQL/TiDB</span>
-                            <span class="tech-badge">Drizzle ORM</span>
-                            <span class="tech-badge">Google Gemini API</span>
-                            <span class="tech-badge">MediaPipe</span>
-                            <span class="tech-badge">TensorFlow.js</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/MarcioGil/jornada-ativa" target="_blank" class="project-link">GitHub</a>
-                        </div>
+                    <div class="stat">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">Anos de Exp.</span>
                     </div>
-                    <!-- Projeto Destacado: Sistema Integrador Empresarial -->
-                    <div class="project-card featured modern-card" data-category="fullstack backend">
-                        <div class="project-header">
-                            <h3><span class="project-icon">🏢</span> Sistema Integrador Empresarial</h3>
-                            <span class="project-tag featured-tag tag-backend">Backend</span>
-                            <span class="project-tag featured-tag tag-api">API REST</span>
-                            <span class="project-tag featured-tag tag-fullstack">Full Stack</span>
-                        </div>
-                        <p class="project-description">Plataforma completa de gestão empresarial integrada com <strong>Django + React</strong>. Sistema robusto para gestão de vendas, estoque, clientes, produtos, financeiro, fornecedores e auditoria. <strong>API REST completa com JWT, Swagger/ReDoc e 47+ endpoints documentados</strong>.</p>
-                        <div class="project-tech">
-                            <span class="tech-badge">Django 5.0.7</span>
-                            <span class="tech-badge">Django REST Framework</span>
-                            <span class="tech-badge">Python 3.13</span>
-                            <span class="tech-badge">PostgreSQL</span>
-                            <span class="tech-badge">JWT</span>
-                            <span class="tech-badge">React 18</span>
-                            <span class="tech-badge">Vite</span>
-                            <span class="tech-badge">Tailwind CSS</span>
-                            <span class="tech-badge">Swagger/ReDoc</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/MarcioGil/Sistema_Integrador_Empresarial" target="_blank" class="project-link">Ver no GitHub →</a>
-                        </div>
-                    </div>
-
-                    <!-- Projeto Destacado: Decifra Cidadão -->
-                    <div class="project-card featured modern-card" data-category="ai accessibility fullstack">
-                        <div class="project-header">
-                            <h3><span class="project-icon">📜</span> Decifra Cidadão</h3>
-                            <span class="project-tag featured-tag tag-ia">IA</span>
-                            <span class="project-tag featured-tag tag-access">Acessibilidade</span>
-                            <span class="project-tag featured-tag tag-pwa">PWA</span>
-                        </div>
-                        <p class="project-description">Plataforma inovadora que democratiza o acesso à informação pública usando <strong>IA (OpenAI GPT-4, Google Vision)</strong> para traduzir documentos burocráticos em linguagem acessível. Com foco em <strong>WCAG 2.1</strong> e PWA.</p>
-                        <div class="project-tech">
-                            <span class="tech-badge">React</span>
-                            <span class="tech-badge">Node.js</span>
-                            <span class="tech-badge">OpenAI GPT-4</span>
-                            <span class="tech-badge">Google Vision</span>
-                            <span class="tech-badge">PWA</span>
-                            <span class="tech-badge">WCAG 2.1</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/MarcioGil/decifra-cidadao" target="_blank" class="project-link">GitHub</a>
-                            <a href="https://decifrando-ocidadao.manus.space/" target="_blank" class="project-link demo">Demo</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Projeto Destacado 2: Mentor 24/7 -->
-                <div class="project-card featured" data-category="ai fullstack">
-                    <div class="project-header">
-                        <h3>Mentor 24/7</h3>
-                        <span class="project-tag featured-tag">IA Educacional</span>
-                    </div>
-                    <p class="project-description">Plataforma de tutoria pessoal baseada em IA que adapta o conteúdo educacional em tempo real. Usa <strong>RAG</strong>, <strong>OpenAI API</strong> e <strong>tRPC</strong> para criar experiências de aprendizado personalizadas.</p>
-                    <div class="project-tech">
-                        <span class="tech-badge">Next.js 14</span>
-                        <span class="tech-badge">TypeScript</span>
-                        <span class="tech-badge">tRPC</span>
-                        <span class="tech-badge">PostgreSQL</span>
-                        <span class="tech-badge">OpenAI API</span>
-                        <span class="tech-badge">RAG</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/MarcioGil/Mentor-24-7" target="_blank" class="project-link">Ver no GitHub →</a>
-                        <a href="https://mentor247-hwsnwhcn.manus.space/" target="_blank" class="project-link demo">Demo Live →</a>
-                    </div>
-                </div>
-
-                <!-- Projeto Destacado 3: Knowledge Guardian -->
-                <div class="project-card featured" data-category="games ai fullstack">
-                    <div class="project-header">
-                        <h3>Knowledge Guardian</h3>
-                        <span class="project-tag featured-tag">Game Educativo</span>
-                    </div>
-                    <p class="project-description">Jogo educativo 2D que combina <strong>Phaser.js</strong> com IA adaptativa. Sistema completo de gamificação, física realista e conteúdo educativo personalizado baseado no desempenho do jogador.</p>
-                    <div class="project-tech">
-                        <span class="tech-badge">React</span>
-                        <span class="tech-badge">Phaser.js</span>
-                        <span class="tech-badge">Node.js</span>
-                        <span class="tech-badge">SQLite</span>
-                        <span class="tech-badge">OpenAI API</span>
-                        <span class="tech-badge">JWT</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/MarcioGil/knowledge-guardian" target="_blank" class="project-link">Ver no GitHub →</a>
-                        <a href="https://guardiaokn-5swkh3rb.manus.space" target="_blank" class="project-link demo">Demo Live →</a>
-                    </div>
-                </div>
-
-                <!-- Projeto 4: NeuroBridge IA -->
-                <div class="project-card" data-category="ai accessibility fullstack">
-                    <div class="project-header">
-                        <h3>NeuroBridge IA</h3>
-                        <span class="project-tag">IA Inclusiva</span>
-                    </div>
-                    <p class="project-description">Plataforma abrangente de inclusão com <strong>React/TypeScript</strong> frontend, <strong>Node.js/Python</strong> backends e serviços de IA para avaliação de acessibilidade. Interfaces multi-modais para máxima inclusão.</p>
-                    <div class="project-tech">
-                        <span class="tech-badge">React</span>
-                        <span class="tech-badge">TypeScript</span>
-                        <span class="tech-badge">Python</span>
-                        <span class="tech-badge">Node.js</span>
-                        <span class="tech-badge">AI Services</span>
-                    </div>
-                    <a href="https://github.com/MarcioGil/neurobridge-IA" target="_blank" class="project-link">Ver no GitHub →</a>
-                </div>
-
-                <!-- Projeto 5: SmartCash -->
-                <div class="project-card" data-category="fullstack ai">
-                    <div class="project-header">
-                        <h3>SmartCash</h3>
-                        <span class="project-tag">FinTech</span>
-                    </div>
-                    <p class="project-description">Simulador inteligente de transações bancárias com análise financeira por IA. Frontend <strong>React</strong>, backend <strong>Node.js</strong>, microserviço <strong>Python/Flask</strong> e chatbot financeiro integrado.</p>
-                    <div class="project-tech">
-                        <span class="tech-badge">React</span>
-                        <span class="tech-badge">Node.js</span>
-                        <span class="tech-badge">Python/Flask</span>
-                        <span class="tech-badge">MongoDB</span>
-                        <span class="tech-badge">JWT</span>
-                        <span class="tech-badge">IA Chatbot</span>
-                    </div>
-                    <a href="https://github.com/MarcioGil/SmartCash" target="_blank" class="project-link">Ver no GitHub →</a>
-                </div>
-
-                <!-- Projeto 6: Health AI Platform -->
-                <div class="project-card" data-category="ai fullstack">
-                    <div class="project-header">
-                        <h3>Health AI Platform</h3>
-                        <span class="project-tag">IA Médica</span>
-                    </div>
-                    <p class="project-description">Plataforma de diagnóstico médico com <strong>React</strong> frontend, <strong>Node.js</strong> backend e IA simulada para análise de sintomas. Inclui geolocalização e recursos médicos avançados.</p>
-                    <div class="project-tech">
-                        <span class="tech-badge">React</span>
-                        <span class="tech-badge">Node.js</span>
-                        <span class="tech-badge">AI/ML</span>
-                        <span class="tech-badge">Geolocation</span>
-                        <span class="tech-badge">Medical APIs</span>
-                    </div>
-                    <a href="https://github.com/MarcioGil/-health-ai-platform" target="_blank" class="project-link">Ver no GitHub →</a>
-                </div>
-
-                <!-- Projeto 7: Mentor de Carreira Acessível -->
-                <div class="project-card" data-category="accessibility ai fullstack">
-                    <div class="project-header">
-                        <h3>Mentor de Carreira Acessível</h3>
-                        <span class="project-tag">Acessibilidade</span>
-                    </div>
-                    <p class="project-description">Plataforma de mentoria com foco em transição de carreira. <strong>Next.js 14</strong>, implementação <strong>RAG</strong>, comandos de voz, design mobile-first PWA e <strong>PostgreSQL + pgvector</strong>.</p>
-                    <div class="project-tech">
-                        <span class="tech-badge">Next.js 14</span>
-                        <span class="tech-badge">RAG</span>
-                        <span class="tech-badge">PostgreSQL</span>
-                        <span class="tech-badge">Voice Commands</span>
-                        <span class="tech-badge">PWA</span>
-                    </div>
-                    <a href="https://github.com/MarcioGil/mentor-de-carreira-acessivel-com-foco-em-transicao" target="_blank" class="project-link">Ver no GitHub →</a>
-                </div>
-
-                <!-- Projeto 8: Workflow Automation System -->
-                <div class="project-card" data-category="fullstack">
-                    <div class="project-header">
-                        <h3>Workflow Automation System</h3>
-                        <span class="project-tag">Automação</span>
-                    </div>
-                    <p class="project-description">Sistema robusto de automação de fluxo de trabalho com <strong>React</strong> frontend e <strong>Flask/Python</strong> backend. Demonstra arquitetura Full-Stack e integração de linguagens.</p>
-                    <div class="project-tech">
-                        <span class="tech-badge">React</span>
-                        <span class="tech-badge">Flask</span>
-                        <span class="tech-badge">Python</span>
-                        <span class="tech-badge">JavaScript</span>
-                    </div>
-                    <a href="https://github.com/MarcioGil/workflow-automation-system" target="_blank" class="project-link">Ver no GitHub →</a>
-                </div>
-
-                <!-- Projeto 9: EstacionamentoApp -->
-                <div class="project-card" data-category="backend">
-                    <div class="project-header">
-                        <h3>EstacionamentoApp</h3>
-                        <span class="project-tag">Back-end</span>
-                    </div>
-                    <p class="project-description">Aplicação robusta para gerenciamento de estacionamento demonstrando aplicação prática dos princípios de <strong>Programação Orientada a Objetos (POO)</strong> em C# e .NET.</p>
-                    <div class="project-tech">
-                        <span class="tech-badge">C#</span>
-                        <span class="tech-badge">.NET</span>
-                        <span class="tech-badge">POO</span>
-                        <span class="tech-badge">Console App</span>
-                    </div>
-                    <a href="https://github.com/MarcioGil/EstacionamentoApp" target="_blank" class="project-link">Ver no GitHub →</a>
                 </div>
             </div>
-
-            <!-- Seção de Estatísticas -->
-            <div class="project-stats">
-                <div class="stat-item">
-                        <span class="stat-number">15+</span>
-                    <span class="stat-label">Projetos Concluídos</span>
-                </div>
-                <div class="stat-item">
-                        <span class="stat-number">9</span>
-                    <span class="stat-label">Projetos com IA</span>
-                </div>
-                <div class="stat-item">
-                        <span class="stat-number">6</span>
-                    <span class="stat-label">Demos Live</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">100%</span>
-                    <span class="stat-label">Foco em Acessibilidade</span>
-                </div>
-            </div>
+            <img src="profile-photo.jpg" alt="Foto de Márcio Gil" class="hero-image">
         </div>
-    </section>
+    </header>
 
-    <!-- Habilidades Section -->
-    <section id="habilidades" class="section">
-        <div class="container">
-            <h2 class="section-title">🛠️ Stack Tecnológico</h2>
-            <p class="section-subtitle">Tecnologias e ferramentas que domino para construir soluções robustas</p>
+    <main>
+        <section id="sobre" class="container">
+            <h2>Sobre Mim</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Profissional de tecnologia apaixonado por resolver problemas reais com soluções digitais. Tenho experiência em desenvolvimento web, suporte técnico, automação de processos e ensino de tecnologia.</p>
+                    <p>Minhas principais competências incluem: desenvolvimento front-end e back-end, integração de sistemas e adaptação rápida a novas tecnologias. Sou motivado por desafios e pela busca constante de inovação.</p>
+                    <p>Acredito que tecnologia é uma ferramenta poderosa para transformar vidas. Meu objetivo é contribuir para projetos que gerem impacto positivo, promovendo inclusão digital e crescimento profissional.</p>
+                </div>
+                <div class="soft-skills-cards">
+                    <div class="soft-skill-card"><h4>Comunicação</h4></div>
+                    <div class="soft-skill-card"><h4>Empatia</h4></div>
+                    <div class="soft-skill-card"><h4>Trabalho em Equipe</h4></div>
+                    <div class="soft-skill-card"><h4>Resiliência</h4></div>
+                    <div class="soft-skill-card"><h4>Proatividade</h4></div>
+                    <div class="soft-skill-card"><h4>Organização</h4></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projetos" class="container">
+            <h2>Projetos</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="fullstack">Full-Stack</button>
+                <button class="filter-btn" data-filter="ia">IA</button>
+                <button class="filter-btn" data-filter="backend">Backend</button>
+                <button class="filter-btn" data-filter="acessibilidade">Acessibilidade</button>
+            </div>
+            <div class="projects-grid">
+                <!-- Projetos serão inseridos dinamicamente aqui -->
+            </div>
+        </section>
+
+        <section id="habilidades" class="container">
+            <h2>Habilidades</h2>
             <div class="skills-grid">
                 <div class="skill-category">
-                    <h3><i class="fas fa-code"></i> Frontend</h3>
-                    <ul>
-                        <li>React.js & Next.js 14</li>
-                        <li>TypeScript & JavaScript</li>
-                        <li>HTML5 & CSS3</li>
-                        <li>Tailwind CSS & Styled Components</li>
-                        <li>PWA Development</li>
-                        <li>Responsive Design</li>
-                        <li>Acessibilidade Web (WCAG 2.1)</li>
+                    <h3>Frontend</h3>
+                    <ul class="skill-list">
+                        <li class="skill-item"><span class="skill-name">React & Next.js</span><span class="skill-level">Avançado</span></li>
+                        <li class="skill-item"><span class="skill-name">TypeScript</span><span class="skill-level">Intermediário</span></li>
+                        <li class="skill-item"><span class="skill-name">Tailwind CSS</span><span class="skill-level">Avançado</span></li>
+                        <li class="skill-item"><span class="skill-name">Acessibilidade (WCAG)</span><span class="skill-level">Especialista</span></li>
                     </ul>
                 </div>
                 <div class="skill-category">
-                    <h3><i class="fas fa-server"></i> Backend & APIs</h3>
-                    <ul>
-                        <li>Node.js & Express.js</li>
-                        <li>Python & Flask/FastAPI</li>
-                        <li>C# & .NET</li>
-                        <li>tRPC & REST APIs</li>
-                        <li>JWT Authentication</li>
-                        <li>Microservices Architecture</li>
-                        <li>API Gateway & Rate Limiting</li>
+                    <h3>Backend</h3>
+                    <ul class="skill-list">
+                        <li class="skill-item"><span class="skill-name">Node.js & Express</span><span class="skill-level">Avançado</span></li>
+                        <li class="skill-item"><span class="skill-name">Python (FastAPI, Django)</span><span class="skill-level">Intermediário</span></li>
+                        <li class="skill-item"><span class="skill-name">SQL & NoSQL</span><span class="skill-level">Intermediário</span></li>
+                        <li class="skill-item"><span class="skill-name">APIs REST & GraphQL</span><span class="skill-level">Avançado</span></li>
                     </ul>
                 </div>
                 <div class="skill-category">
-                    <h3><i class="fas fa-database"></i> Banco de Dados</h3>
-                    <ul>
-                        <li>PostgreSQL & pgvector</li>
-                        <li>MongoDB</li>
-                        <li>SQLite</li>
-                        <li>Drizzle ORM & Sequelize</li>
-                        <li>Database Design</li>
-                        <li>SQL Avançado</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3><i class="fas fa-brain"></i> Inteligência Artificial</h3>
-                    <ul>
-                        <li>OpenAI API (GPT-4, DALL-E)</li>
-                        <li>Google AI & Vision API</li>
-                        <li>RAG (Retrieval Augmented Generation)</li>
-                        <li>Prompt Engineering</li>
-                        <li>Machine Learning Concepts</li>
-                        <li>AI Integration & Workflows</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3><i class="fas fa-gamepad"></i> Game Development</h3>
-                    <ul>
-                        <li>Phaser.js 3</li>
-                        <li>WebGL & Canvas</li>
-                        <li>Game Physics</li>
-                        <li>2D Animation</li>
-                        <li>Game Architecture</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3><i class="fas fa-tools"></i> DevOps & Ferramentas</h3>
-                    <ul>
-                        <li>Git & GitHub Actions</li>
-                        <li>Docker & Containerization</li>
-                        <li>Vercel & Railway Deploy</li>
-                        <li>AWS & Azure (Conceitos)</li>
-                        <li>CI/CD Pipelines</li>
-                        <li>Performance Monitoring</li>
+                    <h3>Ferramentas & DevOps</h3>
+                    <ul class="skill-list">
+                        <li class="skill-item"><span class="skill-name">Git & GitHub</span><span class="skill-level">Avançado</span></li>
+                        <li class="skill-item"><span class="skill-name">Docker</span><span class="skill-level">Intermediário</span></li>
+                        <li class="skill-item"><span class="skill-name">CI/CD (GitHub Actions)</span><span class="skill-level">Intermediário</span></li>
+                        <li class="skill-item"><span class="skill-name">Jest & Playwright</span><span class="skill-level">Básico</span></li>
                     </ul>
                 </div>
             </div>
-            
-            <!-- Competências Adicionais -->
-            <div class="additional-skills">
-                <h3>Competências Adicionais</h3>
-                <div class="soft-skills">
-                    <span class="soft-skill">Liderança Técnica</span>
-                    <span class="soft-skill">Arquitetura de Software</span>
-                    <span class="soft-skill">Acessibilidade Digital</span>
-                    <span class="soft-skill">Comunicação Técnica</span>
-                    <span class="soft-skill">Mentoria & Ensino</span>
-                    <span class="soft-skill">Resolução de Problemas</span>
-                    <span class="soft-skill">Trabalho em Equipe</span>
-                    <span class="soft-skill">Adaptabilidade</span>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contato Section -->
-    <section id="contato" class="section section-alt">
-        <div class="container">
-            <h2 class="section-title">📬 Vamos Conversar?</h2>
-            <p class="section-subtitle">Estou aberto a novas oportunidades e colaborações. Entre em contato!</p>
-            <div class="contact-info">
+        <section id="contato" class="container">
+            <h2>Contato</h2>
+            <div class="contact-grid">
                 <div class="contact-item">
-                    <strong>E-mail:</strong> <a href="mailto:marciopaivagil@gmail.com">marciopaivagil@gmail.com</a>
+                    <p><strong>E-mail</strong></p>
+                    <a href="mailto:marciopaivagil@gmail.com">marciopaivagil@gmail.com</a>
                 </div>
                 <div class="contact-item">
-                    <strong>Telefone:</strong> <a href="tel:+5521964949427">(21) 96494-9427</a>
+                    <p><strong>Telefone</strong></p>
+                    <a href="tel:+5521964949427">(21) 96494-9427</a>
                 </div>
                 <div class="contact-item">
-                    <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/márcio-gil-1b7669309" target="_blank">linkedin.com/in/márcio-gil-1b7669309</a>
+                    <p><strong>LinkedIn</strong></p>
+                    <a href="https://linkedin.com/in/márcio-gil-1b7669309" target="_blank">/in/márcio-gil</a>
                 </div>
                 <div class="contact-item">
-                    <strong>GitHub:</strong> <a href="https://github.com/MarcioGil" target="_blank">github.com/MarcioGil</a>
-                </div>
-                <div class="contact-item">
-                    <strong>Localização:</strong> Mesquita - RJ
+                    <p><strong>GitHub</strong></p>
+                    <a href="https://github.com/MarcioGil" target="_blank">/MarcioGil</a>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Documentação Section -->
-    <section id="documentacao" class="section">
-        <div class="container">
-            <h2 class="section-title">Documentação</h2>
-            <div class="documentation-content">
-                <p>Documentos disponíveis para processos de recrutamento e seleção:</p>
-                <div class="doc-links">
-                    <a href="curriculum_print.html" target="_blank" class="doc-link">
-                        <span class="doc-icon">📄</span>
-                        <span>Currículo Atualizado</span>
-                    </a>
-                    <a href="laudo_PCD.pdf" download class="doc-link">
-                        <span class="doc-icon">📋</span>
-                        <span>Laudo Médico (PCD)</span>
-                    </a>
-                </div>
+            <div class="documentacao-links">
+                 <a href="curriculum_vitae.pdf" target="_blank">📄 Currículo (PDF)</a>
+                 <a href="laudo_PCD.pdf" target="_blank">📋 Laudo Médico (PCD)</a>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- Footer -->
-    <footer class="footer">
+    <footer>
         <div class="container">
             <p>&copy; 2025 Márcio Gil. Todos os direitos reservados.</p>
-            <p>Desenvolvido com foco em acessibilidade e design minimalista.</p>
         </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
 </html>
-
