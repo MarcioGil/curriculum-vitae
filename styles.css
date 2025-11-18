@@ -46,103 +46,22 @@
     font-size: 0.95em;
 }
 @media (max-width: 900px) {
-    .about-content.two-columns {
-        flex-direction: column;
-        gap: 1.2rem;
-    }
-    .about-video-side {
-        /* Modern About Section Layout */
-
-        /* Clean About Section Layout */
-        .clean-about {
-            display: flex;
-            flex-direction: row;
-            gap: 2.5rem;
-            align-items: flex-start;
-            margin-top: 2rem;
-        }
-        .clean-about .about-avatar {
-            flex: 0 0 110px;
-            display: flex;
-            align-items: flex-start;
-            justify-content: flex-start;
-        }
-        .clean-about .profile-photo {
-            width: 110px;
-            height: 110px;
-            border-radius: 50%;
-            box-shadow: 0 4px 24px #22223b22;
-            object-fit: cover;
-            border: 3px solid var(--primary);
-        }
-        .clean-about .about-text {
-            flex: 1 1 340px;
-            font-size: 1.1rem;
-            color: var(--text-color);
-            line-height: 1.7;
-            background: var(--glass-bg);
-            border-radius: 18px;
-            box-shadow: 0 2px 16px #22223b11;
-            padding: 2rem 2rem 1.5rem 2rem;
-            margin-bottom: 0;
-        }
-        .clean-highlights {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 1.2rem;
-            align-content: flex-start;
-            margin-top: 2.5rem;
-        }
-        .clean-highlights .highlight-item {
-            background: var(--glass-bg);
-            border-radius: 14px;
-            box-shadow: 0 2px 12px #22223b0a;
-            padding: 1.2rem 1rem 1rem 1rem;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 0.5rem;
-            font-size: 1rem;
-            color: var(--text-color);
-            transition: box-shadow 0.2s;
-        }
-        .clean-highlights .highlight-item i {
-            font-size: 1.5rem;
-            color: var(--primary);
-        }
-        .clean-highlights .highlight-item h4 {
-            font-size: 1.1rem;
-            font-weight: 600;
-            margin: 0 0 0.2rem 0;
-        }
-        .clean-highlights .highlight-item p {
-            font-size: 0.98rem;
-            margin: 0;
-            color: var(--text-color-light);
-        }
-        @media (max-width: 900px) {
-            .clean-about {
-                flex-direction: column;
-                gap: 1.5rem;
-                align-items: center;
-            }
-            .clean-about .about-avatar {
-                justify-content: center;
-                margin-bottom: 1rem;
-            }
-            .clean-highlights {
-                grid-template-columns: 1fr;
-            }
-        }
-    body {
-        background: #fff !important;
-        color: #000 !important;
-    }
-    .modern-card, .about-video-card {
-        background: #fff !important;
-        color: #000 !important;
-        border-color: #000 !important;
-    }
+  .about-content.two-columns {
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  .clean-about {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+  }
+  .clean-about .about-avatar {
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  .clean-highlights {
+    grid-template-columns: 1fr;
+  }
 }
 /* ===================================
    VARIÁVEIS CSS MODERNAS
