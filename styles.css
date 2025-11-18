@@ -1,4 +1,60 @@
 /* =============================
+     SOBRE MIM - DUAS COLUNAS
+============================= */
+.about-content.two-columns {
+    display: flex;
+    gap: 2.5rem;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.about-text {
+    flex: 2 1 320px;
+    min-width: 260px;
+}
+.about-video-side {
+    flex: 1 1 260px;
+    min-width: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about-video-card {
+    width: 100%;
+    max-width: 340px;
+    background: var(--bg-primary);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    padding: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+.about-video {
+    width: 100%;
+    max-width: 320px;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-md);
+    margin-bottom: 1em;
+}
+.video-title {
+    font-size: 1.1em;
+    font-weight: 700;
+    color: var(--primary-dark);
+    margin-bottom: 0.5em;
+}
+.video-desc {
+    color: var(--text-secondary);
+    font-size: 0.95em;
+}
+@media (max-width: 900px) {
+    .about-content.two-columns {
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+    .about-video-side {
+        align-items: stretch;
+    }
+}
+/* =============================
      CARD PLACEHOLDER (GRID VAZIO)
 ============================= */
 .placeholder-card {
