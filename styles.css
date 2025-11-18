@@ -1,3 +1,103 @@
+/* SOBRE MIM - NOVO LAYOUT */
+.sobre-titulo {
+    font-size: 2.6rem;
+    font-weight: 800;
+    text-align: center;
+    color: var(--primary-dark);
+    margin-bottom: 1.2rem;
+    letter-spacing: 1px;
+}
+.sobre-novo {
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+}
+.sobre-novo .about-avatar {
+    flex: 0 0 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sobre-novo svg {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    box-shadow: 0 4px 24px #22223b22;
+    background: #fff;
+}
+.sobre-texto {
+    flex: 1 1 420px;
+    text-align: center;
+    font-size: 1.25rem;
+    color: var(--text-primary);
+    line-height: 1.8;
+    background: var(--glass-bg);
+    border-radius: 18px;
+    box-shadow: 0 2px 16px #22223b11;
+    padding: 2.2rem 2rem 2rem 2rem;
+    margin-bottom: 0;
+}
+.sobre-destaque {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 1.1rem;
+    color: var(--primary-dark);
+}
+.soft-skills-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+.soft-skill-card {
+    background: var(--glass-bg);
+    border-radius: 16px;
+    box-shadow: 0 2px 12px #22223b0a;
+    padding: 1.5rem 1.2rem 1.2rem 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.7rem;
+    font-size: 1.08rem;
+    color: var(--text-primary);
+    transition: box-shadow 0.2s;
+}
+.soft-skill-card i {
+    font-size: 2rem;
+    color: var(--primary);
+}
+.soft-skill-card h4 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin: 0 0 0.2rem 0;
+}
+.soft-skill-card p {
+    font-size: 1rem;
+    margin: 0;
+    color: var(--text-secondary);
+}
+@media (max-width: 900px) {
+    .sobre-novo {
+        flex-direction: column;
+        gap: 1.5rem;
+        align-items: center;
+    }
+    .sobre-novo .about-avatar {
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+    .sobre-texto {
+        font-size: 1.1rem;
+        padding: 1.5rem 1rem 1.2rem 1rem;
+    }
+    .soft-skills-cards {
+        grid-template-columns: 1fr;
+    }
+}
 /* =============================
      SOBRE MIM - DUAS COLUNAS
 ============================= */
